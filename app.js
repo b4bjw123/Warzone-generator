@@ -43,7 +43,7 @@ jQuery.get("equipment.txt", function(data) {
 });
 
 jQuery.get('rules.txt', function(data) {
-    rules = data.split("\r\n");
+    rules = data.split("\n");
     console.log(rules)
 });
 
