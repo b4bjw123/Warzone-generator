@@ -10,7 +10,7 @@
     <script src="app.js" defer></script> 
 </head>
 <body>
-    <h1>Warzone Generator</h1>
+    <h1>Loadout Generator</h1>
     <h4>50% chance of Overkill, 50% chance of other 6 perks</h4>
     <button id="generate" onclick="generateLoadout()">Generate Loadout</button>
     <table>
@@ -38,8 +38,8 @@
             <th><button id="regeneratePrimary" onclick="regeneratePrimary()">Regenerate</button></th>
             <th><button id="regenerateSecondary" onclick="regenerateSecondary()">Regenerate</button></th>
         </tr>
-    </table>
-    <table>
+    <!-- </table> -->
+    <!-- <table> -->
         <tr>
             <th class="title">Tactical</th>
             <th class="title">Lethal</th>
@@ -48,7 +48,17 @@
             <th id="tacticalText">Tactical</th>
             <th id="lethalText">Lethal</th>
         </tr>
-        </table>
-    
+    </table>
+    <h1>Drop Generator</h1>
+    <button id="generate" onclick="generateDrop()">Generate Drop Location</button>
+    <table>
+        <tr>
+            <th class="title">Drop Location</th>
+        </tr>
+        <tr>
+            <th id="locationText">Location</th>
+        </tr>
+    </table>
+    <img src="caldera-minimap.jpg">
 </body>
 </html>

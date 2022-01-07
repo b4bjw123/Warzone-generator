@@ -12,6 +12,7 @@ let primary = document.getElementById("primaryText");
 let secondary = document.getElementById("secondaryText");
 let tactical = document.getElementById("tacticalText");
 let lethal = document.getElementById("lethalText");
+let dropLocation = document.getElementById("locationText");
 
 jQuery.get('primary.txt', function(data) {
     primaryGuns = data.split(",");
@@ -22,6 +23,7 @@ jQuery.get("secondary.txt", function(data) {
     secondaryGuns = data.split(",")
     // console.log(secondaryGuns);
 });
+
 jQuery.get("perks.txt", function(data) {
     perks1 = data.split(";")[0].split(",")
     perks2 = data.split(";")[1].split(",")
@@ -30,6 +32,7 @@ jQuery.get("perks.txt", function(data) {
     // console.log(perks2);
     // console.log(perks3);
 });
+
 jQuery.get("equipment.txt", function(data) {
     tacticals = data.split(";")[0].split(",")
     lethals = data.split(";")[1].split(",")
@@ -48,6 +51,7 @@ function generatePerk2(){
         perk2.textContent = perks2[randomInt(perks2.length)]
     }
 }
+
 function generatePerks() {
     perk1.textContent = perks1[randomInt(perks1.length)]
     generatePerk2()
@@ -81,6 +85,7 @@ function generateSecondary(){
 function regeneratePrimary(){
     primary.textContent = generatePrimary();
 }
+
 function regenerateSecondary(){
     generatePerk2()
     if (perk2.textContent=="Overkill"){
@@ -88,4 +93,8 @@ function regenerateSecondary(){
     } else{
         secondary.textContent = generateSecondary();
     }
+}
+
+function generateDrop(){
+    dropLocation.textContent = randomInt(69)+1
 }
