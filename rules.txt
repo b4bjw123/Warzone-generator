@@ -38,4 +38,7 @@ Entamaphobia: Cannot open doors, must either loot open structures or doors alrea
 Hey That's Mine: you and your squad have to find a vehicle and guard it with your lives. If an enemy takes it you have to commit suicide.
 Trigger happy: You can only use the full automatic on weapons (if they have it) and once you start firing you can't stop un till your mag is empty.
 Death from Above: Take the first helicopter you see and hunt people down with it.
-Fly Swatter: Your sole goal in life is to take down every helicopter you see
+Fly Swatter: Your sole goal in life is to take down every helicopter you see.
+Why did the chicken do it: Any time you cross a road you must crouch across.
+Fisherman: Anytime you cross a river, you must lay down and say hello to the fishies.
+King of the hill: Find the tallest point in each zone and camp it.
