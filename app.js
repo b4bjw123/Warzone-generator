@@ -5,6 +5,7 @@ let perks2 = [];
 let perks3 = [];
 let tacticals = [];
 let lethals = [];
+let rules = [];
 let perk1 = document.getElementById("perk1Text");
 let perk2 = document.getElementById("perk2Text");
 let perk3 = document.getElementById("perk3Text");
@@ -13,6 +14,7 @@ let secondary = document.getElementById("secondaryText");
 let tactical = document.getElementById("tacticalText");
 let lethal = document.getElementById("lethalText");
 let dropLocation = document.getElementById("locationText");
+let rule = document.getElementById("ruleText");
 
 jQuery.get('primary.txt', function(data) {
     primaryGuns = data.split(",");
@@ -38,6 +40,11 @@ jQuery.get("equipment.txt", function(data) {
     lethals = data.split(";")[1].split(",")
     // console.log(tacticals);
     // console.log(lethals);
+});
+
+jQuery.get('rules.txt', function(data) {
+    rules = data.split("\r\n");
+    console.log(rules)
 });
 
 function randomInt(max){
@@ -97,4 +104,8 @@ function regenerateSecondary(){
 
 function generateDrop(){
     dropLocation.textContent = randomInt(69)+1
+}
+
+function generateRule(){
+    rule.textContent=rules[randomInt(rules.length)];
 }
