@@ -12,6 +12,14 @@
 <body>
     <h1>Loadout Generator</h1>
     <h4>50% chance of Overkill, 50% chance of other 6 perks</h4>
+    <div>
+        All Guns
+        <label class="switch">
+            <input type="checkbox" id="check" onclick="selectionSwap()">
+            <span class="slider round"></span>
+        </label>
+        Vanguard Only
+    </div>
     <button id="generate" onclick="generateLoadout()">Generate Loadout</button>
     <table>
         <tr>

@@ -15,6 +15,7 @@ let tactical = document.getElementById("tacticalText");
 let lethal = document.getElementById("lethalText");
 let dropLocation = document.getElementById("locationText");
 let rule = document.getElementById("ruleText");
+let checkBox = document.getElementById("check")
 
 jQuery.get('primary.txt', function(data) {
     primaryGuns = data.split(",");
@@ -26,6 +27,53 @@ jQuery.get("secondary.txt", function(data) {
     // console.log(secondaryGuns);
 });
 
+jQuery.get("equipment.txt", function(data) {
+    tacticals = data.split(";")[0].split(",")
+    lethals = data.split(";")[1].split(",")
+    // console.log(tacticals);
+    // console.log(lethals);
+});
+
+function selectionSwap() {
+    if (checkBox.checked == true){
+        // console.log("Vanguard");
+        jQuery.get('primaryV.txt', function(data) {
+            primaryGuns = data.split(",");
+            // console.log(primaryGuns)
+        });
+        
+        jQuery.get("secondaryV.txt", function(data) {
+            secondaryGuns = data.split(",")
+            // console.log(secondaryGuns);
+        });
+        
+        jQuery.get("equipmentV.txt", function(data) {
+            tacticals = data.split(";")[0].split(",")
+            lethals = data.split(";")[1].split(",")
+            // console.log(tacticals);
+            // console.log(lethals);
+        });
+    } else {
+        // console.log("All guns");
+        jQuery.get('primary.txt', function(data) {
+            primaryGuns = data.split(",");
+            // console.log(primaryGuns)
+        });
+        
+        jQuery.get("secondary.txt", function(data) {
+            secondaryGuns = data.split(",")
+            // console.log(secondaryGuns);
+        });
+        
+        jQuery.get("equipment.txt", function(data) {
+            tacticals = data.split(";")[0].split(",")
+            lethals = data.split(";")[1].split(",")
+            // console.log(tacticals);
+            // console.log(lethals);
+        });
+    }
+}
+
 jQuery.get("perks.txt", function(data) {
     perks1 = data.split(";")[0].split(",")
     perks2 = data.split(";")[1].split(",")
@@ -35,16 +83,10 @@ jQuery.get("perks.txt", function(data) {
     // console.log(perks3);
 });
 
-jQuery.get("equipment.txt", function(data) {
-    tacticals = data.split(";")[0].split(",")
-    lethals = data.split(";")[1].split(",")
-    // console.log(tacticals);
-    // console.log(lethals);
-});
 
 jQuery.get('rules.txt', function(data) {
     rules = data.split("\n");
-    console.log(rules)
+    // console.log(rules)
 });
 
 function randomInt(max){
@@ -76,6 +118,9 @@ function generateLoadout(){
     primary.textContent = generatePrimary();
     if(perk2.textContent=="Overkill"){
         secondary.textContent = generatePrimary();
+        while(secondary.textContent==primary.textContent){
+            secondary.textContent=generatePrimary();
+        }
     } else {
         secondary.textContent = generateSecondary();
     }
@@ -97,6 +142,9 @@ function regenerateSecondary(){
     generatePerk2()
     if (perk2.textContent=="Overkill"){
         secondary.textContent = generatePrimary();
+        while(secondary.textContent==primary.textContent){
+            secondary.textContent=generatePrimary();
+        }        
     } else{
         secondary.textContent = generateSecondary();
     }

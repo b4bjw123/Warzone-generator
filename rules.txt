@@ -42,3 +42,9 @@ Fly Swatter: Your sole goal in life is to take down every helicopter you see.
 Why did the chicken do it: Any time you cross a road you must crouch across.
 Fisherman: Anytime you cross a river, you must lay down and say hello to the fishies.
 King of the hill: Find the tallest point in each zone and camp it.
+Follow the Leader: Player with the most Kills in Pre-game Lobby is the Leader, they make all the calls the team must follow all instructions.
+Same wavelength: No pinging, saying directions or call-outs.
+Uber: One member is Des, they are only allowed to drive and the rest of the team can only change location using the Uber.
+The Floor is Lava: Touch the floor and you have to kill yourself ASAP
+One chest challenge: The first chest is the only one you're allowed to use the entire game. No floorloot or corpse loot.
+Dogfight: All land on planes, Last player in the sky wins.
