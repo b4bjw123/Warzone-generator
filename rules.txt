@@ -48,3 +48,7 @@ Uber: One member is Des, they are only allowed to drive and the rest of the team
 The Floor is Lava: Touch the floor and you have to kill yourself ASAP
 One chest challenge: The first chest is the only one you're allowed to use the entire game. No floorloot or corpse loot.
 Dogfight: All land on planes, Last player in the sky wins.
+Ultimate protection: Combat Shield and Riot Shield, the rest is up to you.
+Stalker: You must follow the edge of the Gas the entire game.
+Man Made: You cannot walk on the ground, only roads, buildings and concrete. Vehicles allowed.
+To the Moon: You cannot use any attachments that help recoil control.
