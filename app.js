@@ -15,7 +15,11 @@ let tactical = document.getElementById("tacticalText");
 let lethal = document.getElementById("lethalText");
 let dropLocation = document.getElementById("locationText");
 let rule = document.getElementById("ruleText");
-let checkBox = document.getElementById("check")
+let checkBoxGuns = document.getElementById("checkGuns");
+let checkBoxNums = document.getElementById("checkNums");
+let playerNumber = document.getElementById("numberText");
+let nums = 4;
+let numText = document.getElementById("num");
 
 jQuery.get('primary.txt', function(data) {
     primaryGuns = data.split(",");
@@ -35,7 +39,7 @@ jQuery.get("equipment.txt", function(data) {
 });
 
 function selectionSwap() {
-    if (checkBox.checked == true){
+    if (checkBoxGuns.checked == true){
         // console.log("Vanguard");
         jQuery.get('primaryV.txt', function(data) {
             primaryGuns = data.split(",");
@@ -74,13 +78,33 @@ function selectionSwap() {
     }
 }
 
+function numSwap(){
+    if (checkBoxNums.checked == false){
+        return true
+    }
+    else{
+        return false
+    }
+}
+
+function checkNum(){
+    if (numSwap()) {
+        if (nums == 0){
+            return false
+        }else {
+            nums-=1;
+            numText.textContent = nums;
+            return true
+        }
+    }else{
+        return true
+    }
+}
+
 jQuery.get("perks.txt", function(data) {
     perks1 = data.split(";")[0].split(",")
     perks2 = data.split(";")[1].split(",")
     perks3 = data.split(";")[2].split(",")
-    // console.log(perks1);
-    // console.log(perks2);
-    // console.log(perks3);
 });
 
 
@@ -113,6 +137,9 @@ function generateEquipment(){
 }
 
 function generateLoadout(){
+    if(!checkNum()){
+        return
+    }
     generatePerks()
     generateEquipment()
     primary.textContent = generatePrimary();
@@ -135,10 +162,16 @@ function generateSecondary(){
 }
 
 function regeneratePrimary(){
+    if(!checkNum()){
+        return
+    }
     primary.textContent = generatePrimary();
 }
 
 function regenerateSecondary(){
+    if(!checkNum()){
+        return
+    }
     generatePerk2()
     if (perk2.textContent=="Overkill"){
         secondary.textContent = generatePrimary();
@@ -156,4 +189,8 @@ function generateDrop(){
 
 function generateRule(){
     rule.textContent=rules[randomInt(rules.length)];
+}
+
+function generateNumber(){
+    playerNumber.textContent = randomInt((document.getElementById("playerSelect").value))+1
 }

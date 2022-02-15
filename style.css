@@ -126,3 +126,10 @@ div {
   .slider.round:before {
     border-radius: 50%;
   }
+
+  #playerSelect {
+    width: 100%;
+    display: inline;
+    font-size: xx-large;
+    height: 100%;
+  }

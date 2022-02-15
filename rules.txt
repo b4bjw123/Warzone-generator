@@ -20,7 +20,6 @@ Spread Out: If in a group, all party members must pick separate locations to dro
 Carpooling Sucks: If in a group, everyone must drive their own vehicle.
 xxXMontageXxx: If you have a scoped weapon, you must do a 360 before you can shoot.
 Roadrage: Only vehicle kills, no guns or grenades.
-Guardian Angel: Follow the first player/squad you find and protect them from other without letting them know that you are there, you may not harm them. If they die they you commit suicide.
 Paraglider: Jump in the middle of the plane path and pull your chute straight away. Glide to the furthest point away from the path.
 Blitz: Jump as soon as possible and dive straight down. Then hunt other players as fast as possible with your pistol
 Silence is Golden: No speaking to teammates only can communicate through in game movements.
@@ -44,7 +43,7 @@ Fisherman: Anytime you cross a river, you must lay down and say hello to the fis
 King of the hill: Find the tallest point in each zone and camp it.
 Follow the Leader: Player with the most Kills in Pre-game Lobby is the Leader, they make all the calls the team must follow all instructions.
 Same wavelength: No pinging, saying directions or call-outs.
-Uber: One member is Des, they are only allowed to drive and the rest of the team can only change location using the Uber.
+Uber: Use random number generator to assign Des, they are only allowed to drive and the rest of the team can only change location using the Uber.
 The Floor is Lava: Touch the floor and you have to kill yourself ASAP
 One chest challenge: The first chest is the only one you're allowed to use the entire game. No floorloot or corpse loot.
 Dogfight: All land on planes, Last player in the sky wins.
@@ -52,3 +51,14 @@ Ultimate protection: Combat Shield and Riot Shield, the rest is up to you.
 Stalker: You must follow the edge of the Gas the entire game.
 Man Made: You cannot walk on the ground, only roads, buildings and concrete. Vehicles allowed.
 To the Moon: You cannot use any attachments that help recoil control.
+Red light, green light: One player says green light or red light all players must obey.
+Simon Says: Use random number generator to choose Simon, can be anything, at any point in the game. 
+Dead Eye: no scopes allowed on loadout guns.
+Aquaphobia: Fear of water. Any river or lake you must avoid.
+LEYROY JENKINS: Don't stop running. Simple
+HypeMan: Use random number generator to assign HypeMan, They can only use pistols and must always provide moral support.
+Michael Jackson: You must walk backwards until someone gets downed, then you can move normally until each fight is over.
+COVID: You must stay apart from each other, only one person per building, no sharing vehicles.
+Ultimate Distraction: All players run Decoy grenades and throw all of them when in a fight.
+Pea Shooter: All guns must get switched to single fire.
+Style points: Wear your headset backwards.

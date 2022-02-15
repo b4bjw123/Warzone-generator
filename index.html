@@ -15,11 +15,22 @@
     <div>
         All Guns
         <label class="switch">
-            <input type="checkbox" id="check" onclick="selectionSwap()">
+            <input type="checkbox" id="checkGuns" onclick="selectionSwap()">
             <span class="slider round"></span>
         </label>
-        Vanguard Only
+        Vanguard 
     </div>
+    <h4>Limited to 3 regenerates, but use the unlimited switch to override.</h4>
+        <h4 id="num">4</h4>
+    <div>
+        Limited
+        <label class="switch">
+            <input type="checkbox" id="checkNums" onclick="numSwap()">
+            <span class="slider round"></span>
+        </label>
+        Unlimited
+    </div>
+    
     <button id="generate" onclick="generateLoadout()">Generate Loadout</button>
     <table>
         <tr>
@@ -46,8 +57,6 @@
             <th><button id="regeneratePrimary" onclick="regeneratePrimary()">Regenerate</button></th>
             <th><button id="regenerateSecondary" onclick="regenerateSecondary()">Regenerate</button></th>
         </tr>
-    <!-- </table> -->
-    <!-- <table> -->
         <tr>
             <th class="title">Tactical</th>
             <th class="title">Lethal</th>
@@ -78,5 +87,21 @@
         </tr>
     </table>
     <img src="caldera-minimap.jpg">
+    <h1>Random Number</h1>
+    <table>
+        <tr>
+            <th><Button id="generate" onclick="generateNumber()">Generate Number</Button></th>
+            <th><select id="playerSelect">
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select></th>
+        </tr>
+        </table>
+        <table>
+        <tr>
+            <th id="numberText">Number</th>
+        </tr>
+    </table>
 </body>
 </html>
