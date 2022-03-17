@@ -1,10 +1,10 @@
-STG44,Automaton,Itra Burst,BAR,AS44,NZ-41,Volk,Cooper Carbine,
+STG44,Automaton,Itra Burst,BAR,AS44,NZ-41,Volk,Cooper Carbine,KG M40,
 
-MP-40,Sten,M1912, Owen Gun, Type 100, M1912, PPSH-41 (V),
+MP-40,Sten,M1912, Owen Gun, Type 100, M1912, PPSH-41 (V),Welgun,
 
 Einhorn Revolving, Combat Shotgun, Gracey auto, Double Barrel,
 
-MG42, DP27,Type 11, Bren,
+MG42, DP27,Type 11, Bren, Whetley,
 
 M1 Garand, SVT-40, G-43,
 
