@@ -76,17 +76,40 @@
             <th id="ruleText">Rule</th>
         </tr>
     </table>
-    <h1>Drop Generator</h1>
-    <button id="generate" onclick="generateDrop()">Generate Drop Location</button>
-    <table>
-        <tr>
-            <th class="title">Drop Location</th>
-        </tr>
-        <tr>
-            <th id="locationText">Location</th>
-        </tr>
-    </table>
-    <img src="caldera-minimap.jpg">
+    <div>
+        Caldera
+        <label class="switch">
+            <input type="checkbox" id="swapMap" onclick="mapSwap()">
+            <span class="slider round"></span>
+        </label>
+        Rebirth
+    </div>
+    <a id="Caldera">    
+        <h1>Drop Generator</h1>
+        <button id="generate" onclick="generateDropCaldera()">Generate Drop Location</button>
+        <table>
+            <tr>
+                <th class="title">Drop Location</th>
+            </tr>
+            <tr>
+                <th id="locationTextCaldera">Location</th>
+            </tr>
+        </table>
+        <img src="caldera-minimap.jpg">
+    </a>
+    <a id="Rebirth">    
+        <h1>Drop Generator</h1>
+        <button id="generate" onclick="generateDropRebirth()">Generate Drop Location</button>
+        <table>
+            <tr>
+                <th class="title">Drop Location</th>
+            </tr>
+            <tr>
+                <th id="locationTextRebirth">Location</th>
+            </tr>
+        </table>
+        <img src="Rebirth.jpg">
+    </a>
     <h1>Random Number</h1>
     <table>
         <tr>

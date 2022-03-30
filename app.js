@@ -13,13 +13,16 @@ let primary = document.getElementById("primaryText");
 let secondary = document.getElementById("secondaryText");
 let tactical = document.getElementById("tacticalText");
 let lethal = document.getElementById("lethalText");
-let dropLocation = document.getElementById("locationText");
+let dropLocationCaldera = document.getElementById("locationTextCaldera");
+let dropLocationRebirth = document.getElementById("locationTextRebirth");
 let rule = document.getElementById("ruleText");
 let checkBoxGuns = document.getElementById("checkGuns");
 let checkBoxNums = document.getElementById("checkNums");
 let playerNumber = document.getElementById("numberText");
 let nums = 4;
 let numText = document.getElementById("num");
+let calderaDiv = document.getElementById("Caldera");
+let rebirthDiv = document.getElementById("Rebirth");
 
 jQuery.get('primary.txt', function(data) {
     primaryGuns = data.split(",");
@@ -183,8 +186,21 @@ function regenerateSecondary(){
     }
 }
 
-function generateDrop(){
-    dropLocation.textContent = randomInt(69)+1
+function generateDropCaldera(){
+    dropLocationCaldera.textContent = randomInt(69)+1
+}
+function generateDropRebirth(){
+    dropLocationRebirth.textContent = randomInt(34)+1
+}
+function mapSwap(){
+    if (swapMap.checked == true){
+        calderaDiv.style.display = "none";
+        rebirthDiv.style.display = "block";
+    }
+    if (swapMap.checked == false){
+        calderaDiv.style.display = "block";
+        rebirthDiv.style.display = "none";
+    }
 }
 
 function generateRule(){
