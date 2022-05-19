@@ -1,19 +1,23 @@
-STG44,Automaton,Itra Burst,BAR,AS44,NZ-41,Volk,Cooper Carbine, XM4, AK-47 (BO), Krig-6,QBZ-83,FFAR,Groza,FARA 83,C58,
-EM2,Grav,Kilo,FAL,M4A1,FR 5.56, Oden, M13, Scar 17, AK-47 (MW), RAM-7,Grau,CR-56 AMAX, AN-94, AS-VAL,
+AK-47 (BOCW), AK-47 (MW), AN-94, AS VAL, AS44, Automaton, BAR, C58, Cooper, AMAX, EM2, FAL, FARA, FFAR, Scar 17,
+Grau, Grav, Groza, Itra Burst, KG M40, Kilo, Krig, M13, M4A1, Nikita AVT, NZ-41, Oden, QBZ, RAM-7, STG44, Vargo 52,
+Volk, XM4,
 
-MP-40,Sten,M1912, Owen Gun, Type 100, M1912, PPSH-41 (V), MP5 (BO), Milano, AK-74u, KSP 45,Bullfrog,Mac-10, LC10, 
-PPSH-41 (BO),Nail Gun, OTs9,Tec-9,LAPA,AUG (SMG),P90,MP5 (MW), Uzi, PP19 Bizon, MP7, Striker 45, Fennec, Iso,CX-9,
+AK-74u, Armaguerra 43, AUG, Bullfrog, CX-9, Fennec, ISO, KSP 45, LAPA, LC10, M1912, MAC-10, Milano 821, MP-40,
+MP5 (BOCW), MP5 (MW), MP7, Nail Gun, OTs 9, Owen Gun, P90, PP19 Bizon, PPSh-41 (BOCW), PPSh-41 (VG), Sten, Striker 45,
+TEC-9, Type 100, UGR, Uzi, Welgun,
 
-Einhorn Revolving, Combat Shotgun, Gracey auto, Double Barrel, Hauer 77, Gallo SA12, Streetsweeper, .410 Ironhide,
-Model 680, R9-0, 725, Origin 12, VLK Rogue, Jak-12,
+.410 Ironhide, 725, Combat Shotgun, Double Barrel, Einhorn Revolving, Gallo SA12, Gracey Auto, Hauer 77, JAK-12,
+Model 680, Origin 12 Shotgun, R9-0 Shotgun, Streetsweeper, VLK Rogue,
 
-MG42, DP27,Type 11, Bren, Stoner 63, RPD, M60, MG82, PKM, SA87, M91, MG34, Holger-26, Bruen MK9, Finn LMG, RAAL LMG,
+Bren, Bruen Mk9, DP27, FiNN LMG, Holger-26, M60, M91, MG 82, MG34, MG42, PKM, RAAL MG, RPD, SA87, Stoner 63, Type 11,
+Whitley,
 
-M16,DMR 14, AUG (BO),SKS, Type 63, CARV.2,
+AUG (BOCW), CARV, DMR, M16, Type 63,
 
-M1 Garand, SVT-40, G-43, EBR-14, MK2 Carbine, Kar98k (MW), Crossbow (MW), SKS, SP-R 208,
+Crossbow (MW), EBR-14, G-43, Kar98k (MW), M1 Garand, M1916, MK2 Carbine, R1 Shadowhunter, SKS, SP-R 208, SVT-40,
 
-Type 99, 3-Line Rifle, Kar98k (V), Gorenko Anti-Tank Rifle, Pellington, LW3 Tundra, M82, ZRG 20mm, Swiss K31, Dragunov,
-HDR, AX50, Rytec AMR,
+
+3-Line Rifle, AX-50, Dragunov, Gorenko Anti-Tank Rifle, HDR, Kar98k (V), LW3 - Tundra, M82, Pelington 703, Rytec AMR,
+Swiss K31, Type 99, ZRG 20mm,
 
 Riot Shield (MW), Combat Shield (V)
