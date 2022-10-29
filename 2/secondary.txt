@@ -1,5 +1,5 @@
-P890, .50 GS, X12, Basilisk, X13 Auto,
+P890 (P), .50 GS (P), X12 (P), Basilisk (P), X13 Auto (P),
 
-PILA, Stela-P, Jokr, RPG-7,
+PILA (L), Stela-P (L), Jokr (L), RPG-7 (L),
 
-Combat Knife
+Combat Knife (LOL)

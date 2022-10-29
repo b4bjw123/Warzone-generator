@@ -1,13 +1,13 @@
-STG44,Automaton,Itra Burst,BAR,AS44,NZ-41,Volk, Cooper Carbine, KG M40, Nikita AVT,
+STG44 (AR),Automaton (AR),Itra Burst (AR),BAR (AR),AS44 (AR),NZ-41 (AR),Volk (AR), Cooper Carbine (AR), KG M40 (AR), Nikita AVT (AR),
 
-MP-40,Sten,M1912, Owen Gun, Type 100, M1912, PPSH-41 (V),Welgun, Armguerra 43,
+MP-40 (SMG),Sten (SMG),M1912 (SMG), Owen Gun (SMG), Type 100 (SMG), M1912 (SMG), PPSH-41 (V) (SMG),Welgun (SMG), Armguerra 43 (SMG),
 
-Einhorn Revolving, Combat Shotgun, Gracey auto, Double Barrel,
+Einhorn Revolving (SG), Combat Shotgun (SG), Gracey auto (SG), Double Barrel (SG),
 
-MG42, DP27,Type 11, Bren, Whetley,
+MG42 (LMG), DP27 (LMG),Type 11 (LMG), Bren (LMG), Whetley (LMG),
 
-M1 Garand, SVT-40, G-43, M1916,
+M1 Garand (TR), SVT-40 (TR), G-43 (TR), M1916 (TR),
 
-Type 99, 3-Line Rifle, Kar98k (V), Gorenko Anti-Tank Rifle,
+Type 99 (SR), 3-Line Rifle (SR), Kar98k (V) (SR), Gorenko Anti-Tank Rifle (SR),
 
-Combat Shield (V)
+Combat Shield (V) (LOL)

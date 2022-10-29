@@ -1,3 +1,3 @@
-Ratt, Top Break, 1911 (V), Klauser, Machine Pistol,
+Ratt (P), Top Break (P), 1911 (V) (P), Klauser (P), Machine Pistol (P),
 
-M1 Bazooka, Panzerschrek, Panzerfaust, MK11 Launcher
+M1 Bazooka (L), Panzerschrek (L), Panzerfaust (L), MK11 Launcher (L)

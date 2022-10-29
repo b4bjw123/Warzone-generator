@@ -1,23 +1,27 @@
-AK-47 (BOCW), AK-47 (MW), AN-94, AS VAL, AS44, Automaton, BAR, C58, Cooper, AMAX, EM2, FAL, FARA, FFAR, Scar 17,
-Grau, Grav, Groza, Itra Burst, KG M40, Kilo, Krig, M13, M4A1, Nikita AVT, NZ-41, Oden, QBZ, RAM-7, STG44, Vargo 52,
-Volk, XM4,
+AK-47 (BOCW) (AR), AK-47 (MW) (AR), AN-94 (AR), AS VAL (AR), AS44 (AR), Automaton (AR), BAR (AR), C58 (AR), Cooper (AR),
+AMAX (AR), EM2 (AR), FAL (AR), FARA (AR), FFAR (AR), Scar 17 (AR),Grau (AR), Grav (AR), Groza (AR), Itra Burst (AR),
+KG M40 (AR), Kilo (AR), Krig (AR), M13 (AR), M4A1 (AR), Nikita AVT (AR), NZ-41 (AR), Oden (AR), QBZ (AR), RAM-7 (AR),
+ STG44 (AR), Vargo 52 (AR), Volk (AR), XM4 (AR),
 
-AK-74u, Armaguerra 43, AUG, Bullfrog, CX-9, Fennec, ISO, KSP 45, LAPA, LC10, M1912, MAC-10, Milano 821, MP-40,
-MP5 (BOCW), MP5 (MW), MP7, Nail Gun, OTs 9, Owen Gun, P90, PP19 Bizon, PPSh-41 (BOCW), PPSh-41 (VG), Sten, Striker 45,
-TEC-9, Type 100, UGR, Uzi, Welgun,
+AK-74u (SMG), Armaguerra 43 (SMG), AUG (SMG), Bullfrog (SMG), CX-9 (SMG), Fennec (SMG), ISO (SMG), KSP 45 (SMG), LAPA (SMG),
+LC10 (SMG), M1912 (SMG), MAC-10 (SMG), Milano 821 (SMG), MP-40 (SMG), MP5 (BOCW) (SMG), MP5 (MW) (SMG), MP7 (SMG),
+Nail Gun (SMG), OTs 9 (SMG), Owen Gun (SMG), P90 (SMG), PP19 Bizon (SMG), PPSh-41 (BOCW) (SMG), PPSh-41 (VG) (SMG),
+Sten (SMG), Striker 45 (SMG), TEC-9 (SMG), Type 100 (SMG), UGR (SMG), Uzi (SMG), Welgun (SMG),
 
-.410 Ironhide, 725, Combat Shotgun, Double Barrel, Einhorn Revolving, Gallo SA12, Gracey Auto, Hauer 77, JAK-12,
-Model 680, Origin 12 Shotgun, R9-0 Shotgun, Streetsweeper, VLK Rogue,
+.410 Ironhide (SG), 725 (SG), Combat Shotgun (SG), Double Barrel (SG), Einhorn Revolving (SG), Gallo SA12 (SG),
+Gracey Auto (SG), Hauer 77 (SG), JAK-12 (SG), Model 680 (SG), Origin 12 Shotgun (SG), R9-0 Shotgun (SG), Streetsweeper (SG),
+VLK Rogue (SG),
 
-Bren, Bruen Mk9, DP27, FiNN LMG, Holger-26, M60, M91, MG 82, MG34, MG42, PKM, RAAL MG, RPD, SA87, Stoner 63, Type 11,
-Whitley,
+Bren (LMG), Bruen Mk9 (LMG), DP27 (LMG), FiNN LMG (LMG), Holger-26 (LMG), M60 (LMG), M91 (LMG), MG 82 (LMG), MG34 (LMG),
+MG42 (LMG), PKM (LMG), RAAL MG (LMG), RPD (LMG), SA87 (LMG), Stoner 63 (LMG), Type 11 (LMG), Whitley (LMG),
 
-AUG (BOCW), CARV, DMR, M16, Type 63,
+AUG (BOCW) (MR), CARV (MR), DMR (MR), M16 (MR), Type 63 (MR),
 
-Crossbow (MW), EBR-14, G-43, Kar98k (MW), M1 Garand, M1916, MK2 Carbine, R1 Shadowhunter, SKS, SP-R 208, SVT-40,
+Crossbow (MW) (TR), EBR-14 (TR), G-43 (TR), Kar98k (MW) (TR), M1 Garand (TR), M1916 (TR), MK2 Carbine (TR), R1 Shadowhunter (TR),
+SKS (TR), SP-R 208 (TR), SVT-40 (TR),
 
 
-3-Line Rifle, AX-50, Dragunov, Gorenko Anti-Tank Rifle, HDR, Kar98k (V), LW3 - Tundra, M82, Pelington 703, Rytec AMR,
-Swiss K31, Type 99, ZRG 20mm,
+3-Line Rifle (SR), AX-50 (SR), Dragunov (SR), Gorenko Anti-Tank Rifle (SR), HDR (SR), Kar98k (V) (SR), LW3 - Tundra (SR),
+M82 (SR), Pelington 703 (SR), Rytec AMR (SR), Swiss K31 (SR), Type 99 (SR), ZRG 20mm (SR),
 
-Riot Shield (MW), Combat Shield (V)
+Riot Shield (MW) (LOL), Combat Shield (V) (LOL)

@@ -3,6 +3,7 @@ let secondaryGuns = [];
 let perks1 = [];
 let perks2 = [];
 let perks3 = [];
+let perks4 = [];
 let tacticals = [];
 let lethals = [];
 let rules = [];
@@ -126,12 +127,15 @@ function generateBasePerk(){
     }
 }
 
-function generatePerks() {
+function generateBasePerks(){
     perk1.textContent = generateBasePerk()
     perk2.textContent = generateBasePerk()
     while (perk1.textContent==perk2.textContent) {
         perk2.textContent = generateBasePerk();
     }
+}
+function generatePerks() {
+    generateBasePerks()
     perk3.textContent = perks3[randomInt(perks3.length)]
     perk4.textContent = perks4[randomInt(perks4.length)]
 }
@@ -177,8 +181,8 @@ function regenerateSecondary(){
     if(!checkNum()){
         return
     }
-    generatePerk2()
-    if (perk2.textContent=="Overkill"){
+    generateBasePerks()
+    if (perk1.textContent=="Overkill" || perk2.textContent=="Overkill"){
         secondary.textContent = generatePrimary();
         while(secondary.textContent==primary.textContent){
             secondary.textContent=generatePrimary();
