@@ -1,0 +1,3 @@
+Double Time,Battle Hardened, Scavenger, Bomb Squad, Tracker,Strong Arm, Extra Tactical;
+Resupply, Spotter, Cold-Blooded, Fast Hands, Hardline, Focus;
+High Alert, Ghost, Quick Fix, Overclock, Survivor, Birdseye

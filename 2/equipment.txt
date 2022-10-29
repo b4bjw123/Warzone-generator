@@ -1,0 +1,2 @@
+Heatbeat,Stun,Stim,Flash,Smoke,Gas,Snapshot,Decoy,Spotter,Shock Stick;
+Semtex,Throwing Knife,Thermite,Frag,C4,Molotov,Death Frizbee,Claymore,Drill

@@ -9,65 +9,75 @@ let rules = [];
 let perk1 = document.getElementById("perk1Text");
 let perk2 = document.getElementById("perk2Text");
 let perk3 = document.getElementById("perk3Text");
+let perk4 = document.getElementById("perk4Text");
 let primary = document.getElementById("primaryText");
 let secondary = document.getElementById("secondaryText");
 let tactical = document.getElementById("tacticalText");
 let lethal = document.getElementById("lethalText");
-let dropLocationCaldera = document.getElementById("locationTextCaldera");
-let dropLocationRebirth = document.getElementById("locationTextRebirth");
+// let dropLocationCaldera = document.getElementById("locationTextCaldera");
+// let dropLocationRebirth = document.getElementById("locationTextRebirth");
 let rule = document.getElementById("ruleText");
 let checkBoxGuns = document.getElementById("checkGuns");
 let checkBoxNums = document.getElementById("checkNums");
 let playerNumber = document.getElementById("numberText");
 let nums = 4;
 let numText = document.getElementById("num");
-let calderaDiv = document.getElementById("Caldera");
-let rebirthDiv = document.getElementById("Rebirth");
+// let calderaDiv = document.getElementById("Caldera");
+// let rebirthDiv = document.getElementById("Rebirth");
 
-jQuery.get('1/primary.txt', function(data) {
+jQuery.get('2/primary.txt', function(data) {
     primaryGuns = data.split(",");
-    // console.log(primaryGuns)
 });
 
-jQuery.get("1/secondary.txt", function(data) {
+jQuery.get("2/secondary.txt", function(data) {
     secondaryGuns = data.split(",")
-    // console.log(secondaryGuns);
 });
 
-jQuery.get("1/equipment.txt", function(data) {
+jQuery.get("2/equipment.txt", function(data) {
     tacticals = data.split(";")[0].split(",")
     lethals = data.split(";")[1].split(",")
+
 });
 
-function selectionSwap() {
-    if (checkBoxGuns.checked == true){
-        jQuery.get('1/primaryV.txt', function(data) {
-            primaryGuns = data.split(",");
-        });
+// function selectionSwap() {
+//     if (checkBoxGuns.checked == true){
+//         // console.log("Vanguard");
+//         jQuery.get('2/primaryV.txt', function(data) {
+//             primaryGuns = data.split(",");
+//             // console.log(primaryGuns)
+//         });
         
-        jQuery.get("1/secondaryV.txt", function(data) {
-            secondaryGuns = data.split(",")
-        });
+//         jQuery.get("2/secondaryV.txt", function(data) {
+//             secondaryGuns = data.split(",")
+//             // console.log(secondaryGuns);
+//         });
         
-        jQuery.get("1/equipmentV.txt", function(data) {
-            tacticals = data.split(";")[0].split(",")
-            lethals = data.split(";")[1].split(",")
-        });
-    } else {
-        jQuery.get('1/primary.txt', function(data) {
-            primaryGuns = data.split(",");
-        });
+//         jQuery.get("2/equipmentV.txt", function(data) {
+//             tacticals = data.split(";")[0].split(",")
+//             lethals = data.split(";")[1].split(",")
+//             // console.log(tacticals);
+//             // console.log(lethals);
+//         });
+//     } else {
+//         // console.log("All guns");
+//         jQuery.get('2/primary.txt', function(data) {
+//             primaryGuns = data.split(",");
+//             // console.log(primaryGuns)
+//         });
         
-        jQuery.get("1/secondary.txt", function(data) {
-            secondaryGuns = data.split(",")
-        });
+//         jQuery.get("2/secondary.txt", function(data) {
+//             secondaryGuns = data.split(",")
+//             // console.log(secondaryGuns);
+//         });
         
-        jQuery.get("1/equipment.txt", function(data) {
-            tacticals = data.split(";")[0].split(",")
-            lethals = data.split(";")[1].split(",")
-        });
-    }
-}
+//         jQuery.get("2/equipment.txt", function(data) {
+//             tacticals = data.split(";")[0].split(",")
+//             lethals = data.split(";")[1].split(",")
+//             // console.log(tacticals);
+//             // console.log(lethals);
+//         });
+//     }
+// }
 
 function numSwap(){
     if (checkBoxNums.checked == false){
@@ -92,14 +102,15 @@ function checkNum(){
     }
 }
 
-jQuery.get("1/perks.txt", function(data) {
+jQuery.get("2/perks.txt", function(data) {
     perks1 = data.split(";")[0].split(",")
-    perks2 = data.split(";")[1].split(",")
-    perks3 = data.split(";")[2].split(",")
+    perks2 = data.split(";")[0].split(",")
+    perks3 = data.split(";")[1].split(",")
+    perks4 = data.split(";")[2].split(",")
 });
 
 
-jQuery.get("1/rules.txt", function(data) {
+jQuery.get("2/rules.txt", function(data) {
     rules = data.split("\n");
 });
 
@@ -107,18 +118,22 @@ function randomInt(max){
     return Math.floor(Math.random()*max);
 }
 
-function generatePerk2(){
-    if(randomInt(100)>=50){
-        perk2.textContent = "Overkill"
+function generateBasePerk(){
+    if(randomInt(100)>=25){
+        return "Overkill"
     } else{
-        perk2.textContent = perks2[randomInt(perks2.length)]
+        return perks2[randomInt(perks2.length)]
     }
 }
 
 function generatePerks() {
-    perk1.textContent = perks1[randomInt(perks1.length)]
-    generatePerk2()
+    perk1.textContent = generateBasePerk()
+    perk2.textContent = generateBasePerk()
+    while (perk1.textContent==perk2.textContent) {
+        perk2.textContent = generateBasePerk();
+    }
     perk3.textContent = perks3[randomInt(perks3.length)]
+    perk4.textContent = perks4[randomInt(perks4.length)]
 }
 
 function generateEquipment(){
@@ -133,7 +148,7 @@ function generateLoadout(){
     generatePerks()
     generateEquipment()
     primary.textContent = generatePrimary();
-    if(perk2.textContent=="Overkill"){
+    if(perk1.textContent=="Overkill" || perk2.textContent=="Overkill"){
         secondary.textContent = generatePrimary();
         while(secondary.textContent==primary.textContent){
             secondary.textContent=generatePrimary();
@@ -173,22 +188,22 @@ function regenerateSecondary(){
     }
 }
 
-function generateDropCaldera(){
-    dropLocationCaldera.textContent = randomInt(69)+1
-}
-function generateDropRebirth(){
-    dropLocationRebirth.textContent = randomInt(34)+1
-}
-function mapSwap(){
-    if (swapMap.checked == true){
-        calderaDiv.style.display = "none";
-        rebirthDiv.style.display = "block";
-    }
-    if (swapMap.checked == false){
-        calderaDiv.style.display = "block";
-        rebirthDiv.style.display = "none";
-    }
-}
+// function generateDropCaldera(){
+//     dropLocationCaldera.textContent = randomInt(69)+1
+// }
+// function generateDropRebirth(){
+//     dropLocationRebirth.textContent = randomInt(34)+1
+// }
+// function mapSwap(){
+//     if (swapMap.checked == true){
+//         calderaDiv.style.display = "none";
+//         rebirthDiv.style.display = "block";
+//     }
+//     if (swapMap.checked == false){
+//         calderaDiv.style.display = "block";
+//         rebirthDiv.style.display = "none";
+//     }
+// }
 
 function generateRule(){
     rule.textContent=rules[randomInt(rules.length)];
@@ -198,6 +213,6 @@ function generateNumber(){
     playerNumber.textContent = randomInt((document.getElementById("playerSelect").value))+1
 }
 
-function page2(){
-    window.location = "2.html"
+function page1(){
+    window.location = "index.html"
 }

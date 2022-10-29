@@ -6,21 +6,22 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Warzone Generator</title>
-    <script src="app.js" defer></script> 
+    <title>Warzone 2 Generator</title>
+    <script src="app2.js" defer></script> 
 </head>
 <body>
-    <h1>Loadout Generator 1</h1>
-    <button id="games" onclick="page2()">MW2</button>
+    <h1>Loadout Generator 2</h1>
+    <button id="games" onclick="page1()">MW1</button>
     <h4>50% chance of Overkill, 50% chance of other 6 perks</h4>
-    <div>
+
+    <!-- <div>
         All Guns
         <label class="switch">
             <input type="checkbox" id="checkGuns" onclick="selectionSwap()">
             <span class="slider round"></span>
         </label>
         Vanguard 
-    </div>
+    </div> -->
     <h4>Limited to 3 regenerates, but use the unlimited switch to override.</h4>
         <h4 id="num">4</h4>
     <div>
@@ -38,11 +39,13 @@
             <th class="title">Perk 1</th>
             <th class="title">Perk 2</th>
             <th class="title">Perk 3</th>
+            <th class="title">Perk 4</th>
         </tr>
         <tr>
-            <th id="perk1Text">Perk 1</th>
-            <th id="perk2Text">Perk 2</th>
-            <th id="perk3Text">Perk 3</th>
+            <td id="perk1Text">Perk 1</td>
+            <td id="perk2Text">Perk 2</td>
+            <td id="perk3Text">Perk 3</td>
+            <td id="perk4Text">Perk 4</td>
         </tr>
     </table>
     <table>
@@ -51,8 +54,8 @@
             <th class="title">Secondary</th>
         </tr>
         <tr>
-            <th id="primaryText">Primary</th>
-            <th id="secondaryText">Secondary</th>
+            <td id="primaryText">Primary</td>
+            <td id="secondaryText">Secondary</td>
         </tr>
         <tr>
             <th><button id="regeneratePrimary" onclick="regeneratePrimary()">Regenerate</button></th>
@@ -63,8 +66,8 @@
             <th class="title">Lethal</th>
         </tr>
         <tr>
-            <th id="tacticalText">Tactical</th>
-            <th id="lethalText">Lethal</th>
+            <td id="tacticalText">Tactical</td>
+            <td id="lethalText">Lethal</td>
         </tr>
     </table>
     <h1>Rule Generator</h1>
@@ -74,10 +77,40 @@
             <th class="title">Rule</th>
         </tr>
         <tr>
-            <th id="ruleText">Rule</th>
+            <td id="ruleText">Rule</td>
         </tr>
     </table>
-    <div>
+    <table id="type">
+        <tr>
+            <th>(Code)</th>
+            <th>Gun Class</th>
+        </tr><tr>
+            <td>(AR)</td>
+            <td>Assault Rifle</td>
+        </tr><tr>
+            <td>(BR)</td>
+            <td>Battle Rifle</td>
+        </tr><tr>
+            <td>(SMG)</td>
+            <td>Sub-Machine Gun</td>
+        </tr><tr>
+            <td>(SG)</td>
+            <td>Shotgun</td>
+        </tr><tr>
+            <td>(LMG)</td>
+            <td>Light Machine Gun</td>
+        </tr><tr>
+            <td>(MR)</td>
+            <td>Marksman Rifle</td>
+        </tr><tr>
+            <td>(SR)</td>
+            <td>Snipe Rifle</td>
+        </tr><tr>
+            <td>(LOL)</td>
+            <td>hAvE FuN :)</td>
+        </tr>
+    </table>
+    <!-- <div>
         Caldera
         <label class="switch">
             <input type="checkbox" id="swapMap" onclick="mapSwap()">
@@ -96,7 +129,7 @@
                 <th id="locationTextCaldera">Location</th>
             </tr>
         </table>
-        <img src="1/caldera-minimap.jpg">
+        <img src="caldera-minimap.jpg">
     </a>
     <a id="Rebirth">    
         <h1>Drop Generator</h1>
@@ -109,7 +142,7 @@
                 <th id="locationTextRebirth">Location</th>
             </tr>
         </table>
-        <img src="1/Rebirth.jpg">
+        <img src="Rebirth.jpg">
     </a>
     <h1>Random Number</h1>
     <table>
@@ -126,6 +159,6 @@
         <tr>
             <th id="numberText">Number</th>
         </tr>
-    </table>
+    </table> -->
 </body>
 </html>

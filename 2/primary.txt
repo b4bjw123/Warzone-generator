@@ -1,0 +1,15 @@
+M4 (AR), TAQ-56 (AR), Kastov 672 (AR), Lachmann-556 (AR), STB 556 (AR), M16 (AR), Kastov-74U (AR), Kastov 545 (AR),
+
+Lachmann-762 (BR), SO-14 (BR), TAQ-V (BR), FTAC RECON (BR),
+
+VEL 46 (SMG), MX9 (SMG), Lachmann Sub (SMG), Vaznev-9K (SMG), FSS Hurricane (SMG), Minibak (SMG), PDSW 528 (SMG), Fennec 45 (SMG),
+
+Lockwood 300 (SG), Expedite 12 (SG), Bryson 800 (SG), Bryson 890 (SG),
+
+Sakin MG38 (LMG), HCR 56 (LMG), 556 Icarus (LMG), RAAL MG (LMG), RPK (LMG), Rapp H (LMG),
+
+EBR-14 (MR), SP-R 208 (MR), Lockwood MK2 (MR), LM-S (MR), SA-B 50 (MR), TAQ-M (MR),
+
+MCPR-300 (SR), Signal 50 (SR), LA-B 330 (SR), SP-X 80 (SR),
+
+Riot Shield (LOL)
