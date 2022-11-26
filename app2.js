@@ -7,6 +7,7 @@ let perks4 = [];
 let tacticals = [];
 let lethals = [];
 let rules = [];
+let map = [];
 let perk1 = document.getElementById("perk1Text");
 let perk2 = document.getElementById("perk2Text");
 let perk3 = document.getElementById("perk3Text");
@@ -15,7 +16,7 @@ let primary = document.getElementById("primaryText");
 let secondary = document.getElementById("secondaryText");
 let tactical = document.getElementById("tacticalText");
 let lethal = document.getElementById("lethalText");
-// let dropLocationCaldera = document.getElementById("locationTextCaldera");
+let dropLocation = document.getElementById("locationText");
 // let dropLocationRebirth = document.getElementById("locationTextRebirth");
 let rule = document.getElementById("ruleText");
 let checkBoxGuns = document.getElementById("checkGuns");
@@ -115,6 +116,10 @@ jQuery.get("2/rules.txt", function(data) {
     rules = data.split("\n");
 });
 
+jQuery.get("2/map.txt", function(data) {
+    map = data.split(";");
+});
+
 function randomInt(max){
     return Math.floor(Math.random()*max);
 }
@@ -192,9 +197,10 @@ function regenerateSecondary(){
     }
 }
 
-// function generateDropCaldera(){
-//     dropLocationCaldera.textContent = randomInt(69)+1
-// }
+function generateDrop(){
+    // console.log(map);
+    dropLocation.textContent = map[randomInt(53)+1]
+}
 // function generateDropRebirth(){
 //     dropLocationRebirth.textContent = randomInt(34)+1
 // }
