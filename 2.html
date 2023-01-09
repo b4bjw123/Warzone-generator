@@ -12,16 +12,8 @@
 <body>
     <h1>Loadout Generator 2</h1>
     <button id="games" onclick="page1()">MW1</button>
-    <h4>50% chance of Overkill, 50% chance of other 6 perks</h4>
+    <h4>50% chance of Overkill, 50% chance of other 7 perks</h4>
 
-    <!-- <div>
-        All Guns
-        <label class="switch">
-            <input type="checkbox" id="checkGuns" onclick="selectionSwap()">
-            <span class="slider round"></span>
-        </label>
-        Vanguard 
-    </div> -->
     <h4>Limited to 3 regenerates, but use the unlimited switch to override.</h4>
         <h4 id="num">4</h4>
     <div>
@@ -36,16 +28,10 @@
     <button id="generate" onclick="generateLoadout()">Generate Loadout</button>
     <table>
         <tr>
-            <th class="title">Perk 1</th>
-            <th class="title">Perk 2</th>
-            <th class="title">Perk 3</th>
-            <th class="title">Perk 4</th>
+            <th class="title">Perk Pack</th>
         </tr>
         <tr>
-            <td id="perk1Text">Perk 1</td>
-            <td id="perk2Text">Perk 2</td>
-            <td id="perk3Text">Perk 3</td>
-            <td id="perk4Text">Perk 4</td>
+            <td id="perksText">Perk</td>
         </tr>
     </table>
     <table>
@@ -70,16 +56,7 @@
             <td id="lethalText">Lethal</td>
         </tr>
     </table>
-    <h1>Rule Generator</h1>
-    <Button id="generate" onclick="generateRule()">Generate Rule</Button>
-    <table>
-        <tr>
-            <th class="title">Rule</th>
-        </tr>
-        <tr>
-            <td id="ruleText">Rule</td>
-        </tr>
-    </table>
+    <h2>Gun Types Key</h2>
     <table id="type">
         <tr>
             <th>(Code)</th>
@@ -116,16 +93,17 @@
             <td>hAvE FuN :)</td>
         </tr>
     </table>
-    <!-- <div>
-        Caldera
-        <label class="switch">
-            <input type="checkbox" id="swapMap" onclick="mapSwap()">
-            <span class="slider round"></span>
-        </label>
-        Rebirth
-    </div>
--->
-    <a id="Caldera">    
+    <h1>Rule Generator</h1>
+    <Button id="generate" onclick="generateRule()">Generate Rule</Button>
+    <table>
+        <tr>
+            <th class="title">Rule</th>
+        </tr>
+        <tr>
+            <td id="ruleText">Rule</td>
+        </tr>
+    </table>
+    <a id="Al Mazrah">    
         <h1>Drop Generator</h1>
         <button id="generate" onclick="generateDrop()">Generate Drop Location</button>
         <table>
@@ -138,34 +116,5 @@
         </table>
         <img src="2/map.png">
     </a>
-<!-- <a id="Rebirth">    
-        <h1>Drop Generator</h1>
-        <button id="generate" onclick="generateDropRebirth()">Generate Drop Location</button>
-        <table>
-            <tr>
-                <th class="title">Drop Location</th>
-            </tr>
-            <tr>
-                <th id="locationTextRebirth">Location</th>
-            </tr>
-        </table>
-        <img src="Rebirth.jpg">
-    </a>
-    <h1>Random Number</h1>
-    <table>
-        <tr>
-            <th><Button id="generate" onclick="generateNumber()">Generate Number</Button></th>
-            <th><select id="playerSelect">
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-            </select></th>
-        </tr>
-        </table>
-        <table>
-        <tr>
-            <th id="numberText">Number</th>
-        </tr>
-    </table> -->
 </body>
 </html>
