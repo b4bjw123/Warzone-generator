@@ -5,60 +5,47 @@ Prison Snake: If sent to the gulag you must lay down and crawl for the duration 
 EMP: No killstreaks (ex: no UAV, cluster strikes, etc)
 Lucky Duck: No special rules.
 Choose Wisely: You can only loot one house/building (can loot bodies).
-Respect the Dead: No looting bodies.
-Grounded: You can only loot the bottom story/floor of any building/house/structure.
-Vehicular Manslaughter: If you are in a vehicle you must attempt run over any player you see.
+Respect the Dead: No looting bodies. (Only ammo)
 Stay Low: You can only move around when crouched, prone or in a vehicle.
-Cop Mode: you cannot shoot at someone until they start shooting at you.
-Bird Watcher: You must go to every loadout drop you see falling.
-Slim Pickings: You can only loot loadout drops, get a vehicle and find that drop.
-Gephyrophobia: You are deathly afraid of bridges, you must swim or go around when you encounter a bridge
-Heads Up: You must fire at least 3 warning shots close to the enemy before hitting them.
+Gephyrophobia: You are deathly afraid of bridges, you must swim or go around when you encounter a bridge.
 Viking Funeral: If you have a Molotov you must throw it on an enemies body after downing them in order to send them to Valhalla.
-Afraid of heights: you can't go above the first story of any building.
 Spread Out: If in a group, all party members must pick separate locations to drop and then meet up.
 Carpooling Sucks: If in a group, everyone must drive their own vehicle.
-xxXMontageXxx: If you have a scoped weapon, you must do a 360 before you can shoot.
-Roadrage: Only vehicle kills, no guns or grenades.
 Paraglider: Jump in the middle of the plane path and pull your chute straight away. Glide to the furthest point away from the path.
-Blitz: Jump as soon as possible and dive straight down. Then hunt other players as fast as possible with your pistol
 Silence is Golden: No speaking to teammates only can communicate through in game movements.
 Farmer: Jump from plane with the AFK'ers.
-Low Profile: While moving on foot you can only crawl. (Once stationary any stance is allowed. Vehicles allowed.)
 Vape Nation: You must throw a smoke grenade every time you see an enemy.
 Switch It Up: Every time you kill someone, you have to switch your weapon that you used to kill them, with one of their weapons.
-Lounge Chair: you can only get kills from a vehicle (no roadkill's, shooting from a seat)
-Suppressed Only: Whichever suppressed weapon you find first is now the only weapon you can use.
-Grave Robber: You can only keep what you kill (After the first gas circle you can only loot dead bodies you've killed).
+Suppressed Only: Only suppressed weapons allowed.
 Beware the man with one gun, he knows how to use it: Only use one gun.
-Stay Quiet: You're only allowed to use a weapon if they have a suppressor.
-Hot Potato: Every grenade you see(frag, flash ,smoke, & molotov) you must pick up and immediately throw it .
-Entamaphobia: Cannot open doors, must either loot open structures or doors already open
+Hot Potato: Every grenade you see (frag, flash ,smoke, & molotov) you must pick up and immediately throw it .
+Entamaphobia: Cannot open doors, must either loot open structures or doors already open.
 Hey That's Mine: you and your squad have to find a vehicle and guard it with your lives. If an enemy takes it you have to commit suicide.
-Trigger happy: You can only use the full automatic on weapons (if they have it) and once you start firing you can't stop un till your mag is empty.
-Death from Above: Take the first helicopter you see and hunt people down with it.
-Fly Swatter: Your sole goal in life is to take down every helicopter you see.
+Death from Above: Helicopter warfare only. Someone has to be in a helicopter at all times.
 Why did the chicken do it: Any time you cross a road you must crouch across.
 Fisherman: Anytime you cross a river, you must lay down and say hello to the fishies.
-King of the hill: Find the tallest point in each zone and camp it.
-Follow the Leader: Player with the most Kills in Pre-game Lobby is the Leader, they make all the calls the team must follow all instructions.
-Same wavelength: No pinging, saying directions or call-outs.
-Uber: Use random number generator to assign Des, they are only allowed to drive and the rest of the team can only change location using the Uber.
-The Floor is Lava: Touch the floor and you have to kill yourself ASAP
+Follow the Leader: Player with the least kills/damage in Pre-game Lobby is the Leader, they make all the calls the team must follow all instructions.
+Uber: Player with the least kills/damage in Pre-game Lobby is the Uber driver and the rest of the team can only change location using the Uber.
 One chest challenge: The first chest is the only one you're allowed to use the entire game. No floorloot or corpse loot.
-Dogfight: All land on planes, Last player in the sky wins.
-Ultimate protection: Combat Shield and Riot Shield, the rest is up to you.
 Stalker: You must follow the edge of the Gas the entire game.
-Man Made: You cannot walk on the ground, only roads, buildings and concrete. Vehicles allowed.
 To the Moon: You cannot use any attachments that help recoil control.
 Red light, green light: One player says green light or red light all players must obey.
-Simon Says: Use random number generator to choose Simon, can be anything, at any point in the game. 
 Dead Eye: no scopes allowed on loadout guns.
 Aquaphobia: Fear of water. Any river or lake you must avoid.
 LEYROY JENKINS: Don't stop running. Simple
-HypeMan: Use random number generator to assign HypeMan, They can only use pistols and must always provide moral support.
-Michael Jackson: You must walk backwards until someone gets downed, then you can move normally until each fight is over.
-COVID: You must stay apart from each other, only one person per building, no sharing vehicles.
 Ultimate Distraction: All players run Decoy grenades and throw all of them when in a fight.
-Pea Shooter: All guns must get switched to single fire.
-Style points: Wear your headset backwards.
+Mr Chatty: Talk to any other player you come across. Try to make the biggest team possible.
+Elevator Music: Non-stop Elevator music. Simple
+Number 1 teammate: No useful callouts. ("They're over there", "That way" etc)
+I'M BLUE DA BA DE: No 3 plate armour vests.
+Screw the AI revolution: Kill all AI!
+Free Ride: Use the train for as long as possible.
+Save the planet: Only use EVs and recharge them whenever you can.
+King of the hill: Get a Most Wanted Contract, and sit at the top of the tallest place (building/terrain)
+Peaky Bliders: Flash grenades. As many as possible. Make them regret having eyes.
+Aquaman: Spend as much time in water as possible.
+Danger Zone: All lethal killsteaks (Mortor Strike, Air strike), must be placed at players feet. Can you out run it?
+Michael Jackson: You can only go through doors backwards. Only drive/Fly backwards.
+I can see you: Equip Spotter Scopes in loadout.You can only then ping through the spotter scope or gun scopes.
+I'm surrounded: Maximum decoy grenades. Use all you have in every fight.
+I CAN SMELL YOU: Tear gas everyone. Sniff them out and kill them.
