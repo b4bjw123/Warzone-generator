@@ -19,6 +19,7 @@ let playerNumber = document.getElementById("numberText");
 let nums = 4;
 let numText = document.getElementById("num");
 
+// Read all files into vars
 jQuery.get('2/primary.txt', function (data) {
     primaryGuns = data.split(",");
 });
@@ -30,9 +31,22 @@ jQuery.get("2/secondary.txt", function (data) {
 jQuery.get("2/equipment.txt", function (data) {
     tacticals = data.split(";")[0].split(",")
     lethals = data.split(";")[1].split(",")
-
 });
 
+jQuery.get("2/perks.txt", function (data) {
+    perks = data.split(";")[0].split(",");
+});
+
+jQuery.get("2/rules.txt", function (data) {
+    rules = data.split("\n");
+});
+
+jQuery.get("2/map.txt", function (data) {
+    map = data.split(";");
+});
+
+
+// returns a boolean if the limited/unlimited switch is toggled
 function numSwap() {
     if (checkBoxNums.checked == false) {
         return true
@@ -41,6 +55,7 @@ function numSwap() {
     }
 }
 
+// if numSwap() is true de-increment generate value 
 function checkNum() {
     if (numSwap()) {
         if (nums == 0) {
@@ -55,22 +70,12 @@ function checkNum() {
     }
 }
 
-jQuery.get("2/perks.txt", function (data) {
-    perks = data.split(";")[0].split(",");
-});
-
-jQuery.get("2/rules.txt", function (data) {
-    rules = data.split("\n");
-});
-
-jQuery.get("2/map.txt", function (data) {
-    map = data.split(";");
-});
-
+// returns random int from 0 to @param max
 function randomInt(max) {
     return Math.floor(Math.random() * max);
 }
 
+// 50% chance of weapon specialist OR random pick of other perk packs
 function generatePerkPack() {
     if (randomInt(100) >= (100 - overKillPercent)) {
         return "Weapon Specialist"
@@ -79,11 +84,13 @@ function generatePerkPack() {
     }
 }
 
+// Generate throwies and populate on page
 function generateEquipment() {
     tactical.textContent = tacticals[randomInt(tacticals.length)]
     lethal.textContent = lethals[randomInt(lethals.length)]
 }
 
+// Generates loadout and populates
 function generateLoadout() {
     if (!checkNum()) {
         return
@@ -91,7 +98,7 @@ function generateLoadout() {
     perk.textContent = generatePerkPack()
     generateEquipment()
     primary.textContent = generatePrimary();
-    if (perk.textContent == "Weapon Specialist") {
+    if (perk.textContent == "Weapon Specialist") {                      // Check is perk allows 2 primary guns
         secondary.textContent = generatePrimary();
         while (secondary.textContent == primary.textContent) {
             secondary.textContent = generatePrimary();
@@ -101,14 +108,17 @@ function generateLoadout() {
     }
 }
 
+// Generate primary gun from array
 function generatePrimary() {
     return primaryGuns[randomInt(primaryGuns.length)];
 }
 
+// Generate secondary gun from array
 function generateSecondary() {
     return secondaryGuns[randomInt(secondaryGuns.length)];
 }
 
+// Regenerate after checking 
 function regeneratePrimary() {
     if (!checkNum()) {
         return
@@ -117,6 +127,7 @@ function regeneratePrimary() {
     generateEquipment()
 }
 
+// Regenerate perk pack, then generate primary or secondary
 function regenerateSecondary() {
     if (!checkNum()) {
         return
@@ -133,10 +144,12 @@ function regenerateSecondary() {
     generateEquipment()
 }
 
+// Generate drop location and populate
 function generateDrop() {
     dropLocation.textContent = map[randomInt(53) + 1]
 }
 
+// Generate rule and populate
 function generateRule() {
     rule.textContent = rules[randomInt(rules.length)];
 }
