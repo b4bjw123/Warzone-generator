@@ -1,1 +1,3 @@
-Vanguard,Commando,Specter,Scout,Sentinal,Warden,Recon
+Overkill, Double Time, Battle Hardened, Scavenger, Bomb Squad, Tracker, Strong Arm;
+Resupply, Spotter, Cold Blooded, Fast Hands, Focus;
+High Alert, Ghost, Quick Fix, Survivor, Birdseye
