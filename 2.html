@@ -115,13 +115,23 @@
         <button id="generate" onclick="generateDrop()">Generate Drop Location</button>
         <table>
             <tr>
-                <th class="title">Drop Location</th>
-            </tr>
-            <tr>
-                <th id="locationText">Location</th>
+                <th class="title">Map</th>
             </tr>
         </table>
-        <img src="2/map.png">
+        <table>
+            <tr>    
+                <th><button id="mapCaldera" onclick="mapCaldera()">Caldera</button></th>
+                <th><button id="mapVondel" onclick="mapVondel()">Vondel</button></th>
+                <th><button id="mapAshika" onclick="mapAshika()">Ashika</button></th>
+            </tr>
+        </table>
+        <table>
+            
+            <tr>
+                <th id="locationText">Drop Location</th>
+            </tr>
+        </table>
+        <img id="map" src="2/caldera.png">
     </a>
 </body>
 </html>

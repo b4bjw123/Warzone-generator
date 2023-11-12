@@ -6,7 +6,10 @@ let perks4 = [];
 let tacticals = [];
 let lethals = [];
 let rules = [];
-let map = [];
+let caldera = [];
+let vondel = [];
+let ashika = [];
+let map = document.getElementById("map");
 let perk1 = document.getElementById("perk1Text");
 let perk2 = document.getElementById("perk2Text");
 let perk3 = document.getElementById("perk3Text");
@@ -48,8 +51,14 @@ jQuery.get("2/rules.txt", function (data) {
     rules = data.split("\n");
 });
 
-jQuery.get("2/map.txt", function (data) {
-    map = data.split(";");
+jQuery.get("2/caldera.txt", function (data) {
+    caldera = data.split(";");
+});
+jQuery.get("2/vondel.txt", function (data) {
+    vondel = data.split(";");
+});
+jQuery.get("2/ashika.txt", function (data) {
+    ashika = data.split(";");
 });
 
 
@@ -163,11 +172,6 @@ function regenerateSecondary() {
     generateEquipment()
 }
 
-// Generate drop location and populate
-function generateDrop() {
-    dropLocation.textContent = map[randomInt(53) + 1]
-}
-
 // Generate rule and populate
 function generateRule() {
     rule.textContent = rules[randomInt(rules.length)];
@@ -175,4 +179,20 @@ function generateRule() {
 
 function page1() {
     window.location = "index.html"
+}
+
+// Generate drop location and populate
+function mapCaldera(){
+    dropLocation.textContent = caldera[randomInt(53) + 1]
+    map.src="2/caldera.png"
+}
+// Generate drop location and populate
+function mapVondel(){
+    dropLocation.textContent = vondel[randomInt(53) + 1]
+    map.src="2/vondel.png"
+}
+// Generate drop location and populate
+function mapAshika(){
+    dropLocation.textContent = ashika[randomInt(53) + 1]
+    map.src="2/ashika.png"
 }
