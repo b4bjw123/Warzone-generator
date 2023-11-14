@@ -189,10 +189,10 @@ function mapCaldera(){
 // Generate drop location and populate
 function mapVondel(){
     dropLocation.textContent = vondel[randomInt(53) + 1]
-    map.src="2/vondel.png"
+    map.src="2/Vondel.png"
 }
 // Generate drop location and populate
 function mapAshika(){
     dropLocation.textContent = ashika[randomInt(53) + 1]
-    map.src="2/ashika.png"
+    map.src="2/Ashika.png"
 }
