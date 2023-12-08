@@ -7,22 +7,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Warzone Generator</title>
-    <script src="app.js" defer></script> 
+    <title>Warzone 3 Generator</title>
+    <script src="app3.js" defer></script> 
 </head>
 <body>
-    <h1>Loadout Generator 1</h1>
+    <h1>Loadout Generator 3</h1>
+    <button id="games" onclick="page1()">MW1</button>
     <button id="games" onclick="page2()">MW2</button>
-    <button id="games" onclick="page3()">MW3</button>
-    <h4>50% chance of Overkill, 50% chance of other 6 perks</h4>
-    <div>
-        All Guns
-        <label class="switch">
-            <input type="checkbox" id="checkGuns" onclick="selectionSwap()">
-            <span class="slider round"></span>
-        </label>
-        Vanguard 
-    </div>
     <h4>Limited to 3 regenerates, but use the unlimited switch to override.</h4>
         <h4 id="num">4</h4>
     <div>
@@ -40,11 +31,13 @@
             <th class="title">Perk 1</th>
             <th class="title">Perk 2</th>
             <th class="title">Perk 3</th>
+            <th class="title">Perk 4</th>
         </tr>
         <tr>
-            <td id="perk1Text">Perk 1</td>
-            <td id="perk2Text">Perk 2</td>
-            <td id="perk3Text">Perk 3</td>
+            <td id="perk1Text">Perk1</td>
+            <td id="perk2Text">Perk2</td>
+            <td id="perk3Text">Perk3</td>
+            <td id="perk4Text">Perk4</td>
         </tr>
     </table>
     <table>
@@ -69,16 +62,7 @@
             <td id="lethalText">Lethal</td>
         </tr>
     </table>
-    <h1>Rule Generator</h1>
-    <Button id="generate" onclick="generateRule()">Generate Rule</Button>
-    <table>
-        <tr>
-            <th class="title">Rule</th>
-        </tr>
-        <tr>
-            <td id="ruleText">Rule</td>
-        </tr>
-    </table>
+    <h2>Gun Types Key</h2>
     <table id="type">
         <tr>
             <th>(Code)</th>
@@ -86,6 +70,9 @@
         </tr><tr>
             <td>(AR)</td>
             <td>Assault Rifle</td>
+        </tr><tr>
+            <td>(BR)</td>
+            <td>Battle Rifle</td>
         </tr><tr>
             <td>(SMG)</td>
             <td>Sub-Machine Gun</td>
@@ -98,9 +85,6 @@
         </tr><tr>
             <td>(MR)</td>
             <td>Marksman Rifle</td>
-        </tr><tr>
-            <td>(TR)</td>
-            <td>Tactical Rifle</td>
         </tr><tr>
             <td>(SR)</td>
             <td>Snipe Rifle</td>
@@ -115,55 +99,37 @@
             <td>hAvE FuN :)</td>
         </tr>
     </table>
-    <div>
-        Caldera
-        <label class="switch">
-            <input type="checkbox" id="swapMap" onclick="mapSwap()">
-            <span class="slider round"></span>
-        </label>
-        Rebirth
-    </div>
-    <a id="Caldera">    
-        <h1>Drop Generator</h1>
-        <button id="generate" onclick="generateDropCaldera()">Generate Drop Location</button>
-        <table>
-            <tr>
-                <th class="title">Drop Location</th>
-            </tr>
-            <tr>
-                <td id="locationTextCaldera">Location</td>
-            </tr>
-        </table>
-        <img src="1/caldera-minimap.jpg">
-    </a>
-    <a id="Rebirth">    
-        <h1>Drop Generator</h1>
-        <button id="generate" onclick="generateDropRebirth()">Generate Drop Location</button>
-        <table>
-            <tr>
-                <th class="title">Drop Location</th>
-            </tr>
-            <tr>
-                <td id="locationTextRebirth">Location</td>
-            </tr>
-        </table>
-        <img src="1/Rebirth.jpg">
-    </a>
-    <h1>Random Number</h1>
+    <h1>Rule Generator</h1>
+    <Button id="generate" onclick="generateRule()">Generate Rule</Button>
     <table>
         <tr>
-            <th><Button id="generate" onclick="generateNumber()">Generate Number</Button></th>
-            <th><select id="playerSelect">
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-            </select></th>
+            <th class="title">Rule</th>
         </tr>
-        </table>
-        <table>
         <tr>
-            <td id="numberText">Number</td>
+            <td id="ruleText">Rule</td>
         </tr>
     </table>
+    <a id="Al Mazrah">    
+        <h1>Drop Generator</h1>
+        <table>
+            <tr>
+                <th class="title">Map</th>
+            </tr>
+        </table>
+        <table>
+            <tr>    
+                <th><button id="mapUrzikstan" onclick="mapUrzikstan()">Urzikstan</button></th>
+                <th><button id="mapVondel" onclick="mapVondel()">Vondel</button></th>
+                <th><button id="mapAshika" onclick="mapAshika()">Ashika</button></th>
+            </tr>
+        </table>
+        <table>
+            
+            <tr>
+                <th id="locationText">Drop Location</th>
+            </tr>
+        </table>
+        <img id="map" src="3/Urzikstan.png">
+    </a>
 </body>
 </html>

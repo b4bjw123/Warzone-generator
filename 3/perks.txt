@@ -1,0 +1,3 @@
+Mountaineer, Mechanic, Shrapnel, Scavenger, Battle Hardened, EOD, Strong Arm, Spotter, Sleight of Hand, Double Time, Irradiated;
+Escapist, Quick Fix, Tracker, Survivor, Tempered, Resupply, Cold-blooded, Stalker, Payout, Primed;
+Ghost, Shrouded, Flex, Combat Scout, Birdseye, High Alert, Resolute

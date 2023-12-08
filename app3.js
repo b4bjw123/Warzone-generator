@@ -6,7 +6,7 @@ let perks4 = [];
 let tacticals = [];
 let lethals = [];
 let rules = [];
-let caldera = [];
+let urzikstan = [];
 let vondel = [];
 let ashika = [];
 let map = document.getElementById("map");
@@ -28,36 +28,36 @@ let nums = 4;
 let numText = document.getElementById("num");
 
 // Read all files into vars
-jQuery.get('2/primary.txt', function (data) {
+jQuery.get('3/primary.txt', function (data) {
     primaryGuns = data.split(",");
 });
 
-jQuery.get("2/secondary.txt", function (data) {
+jQuery.get("3/secondary.txt", function (data) {
     secondaryGuns = data.split(",")
 });
 
-jQuery.get("2/equipment.txt", function (data) {
+jQuery.get("3/equipment.txt", function (data) {
     tacticals = data.split(";")[0].split(",")
     lethals = data.split(";")[1].split(",")
 });
 
-jQuery.get("2/perks.txt", function (data) {
+jQuery.get("3/perks.txt", function (data) {
     perks1_2 = data.split(";")[0].split(",");
     perks3 = data.split(";")[1].split(",");
     perks4 = data.split(";")[2].split(",");
 });
 
-jQuery.get("2/rules.txt", function (data) {
+jQuery.get("3/rules.txt", function (data) {
     rules = data.split("\n");
 });
 
-jQuery.get("2/caldera.txt", function (data) {
-    caldera = data.split(";");
+jQuery.get("3/Urzikstan.txt", function (data) {
+    urzikstan = data.split(";");
 });
-jQuery.get("2/vondel.txt", function (data) {
+jQuery.get("3/vondel.txt", function (data) {
     vondel = data.split(";");
 });
-jQuery.get("2/ashika.txt", function (data) {
+jQuery.get("3/ashika.txt", function (data) {
     ashika = data.split(";");
 });
 
@@ -93,21 +93,8 @@ function randomInt(max) {
 
 // 50% chance of weapon specialist OR random pick of other perk packs
 function generatePerkPack() {
-    if ((randomInt(100)/2) >= (100 - overKillPercent)) {
-        perk1.textContent = "Overkill"
-    } else {
-        perk1.textContent = perks1_2[randomInt(perks1_2.length)]
-    }
-    if ((perk1.textContent!="Overkill") && (randomInt(100)/2) >= (100 - overKillPercent))  {
-        perk2.textContent = "Overkill"
-    } else {
-        while (true){
-            perk2.textContent = perks1_2[randomInt(perks1_2.length)]
-            if (perk2.textContent != perk1.textContent){
-                break
-            }
-        }
-    }
+    perk1.textContent = perks1_2[randomInt(perks1_2.length)]
+    perk2.textContent = perks1_2[randomInt(perks1_2.length)]
     perk3.textContent = perks3[randomInt(perks3.length)]
     perk4.textContent = perks4[randomInt(perks4.length)]
 }
@@ -126,12 +113,8 @@ function generateLoadout() {
     generatePerkPack()
     generateEquipment()
     primary.textContent = generatePrimary();
-    if (perk1.textContent == "Overkill" || perk2.textContent == "Overkill") {                      // Check is perk allows 2 primary guns
-        secondary.textContent = generatePrimary();
-        while (secondary.textContent == primary.textContent) {
-            secondary.textContent = generatePrimary();
-        }
-    } else {
+    secondary.textContent = generateSecondary();
+    while (secondary.textContent == primary.textContent) {
         secondary.textContent = generateSecondary();
     }
 }
@@ -151,8 +134,8 @@ function regeneratePrimary() {
     if (!checkNum()) {
         return
     }
+    generatePerkPack()
     primary.textContent = generatePrimary();
-    generateEquipment()
 }
 
 // Regenerate perk pack, then generate primary or secondary
@@ -161,15 +144,10 @@ function regenerateSecondary() {
         return
     }
     generatePerkPack()
-    if (perk1.textContent == "Overkill" || perk2.textContent == "Overkill") {
-        secondary.textContent = generatePrimary();
-        while (secondary.textContent == primary.textContent) {
-            secondary.textContent = generatePrimary();
-        }
-    } else {
+    secondary.textContent = generateSecondary();
+    while (secondary.textContent == primary.textContent) {
         secondary.textContent = generateSecondary();
     }
-    generateEquipment()
 }
 
 // Generate rule and populate
@@ -181,22 +159,22 @@ function page1() {
     window.location = "index.html"
 }
 
-function page3() {
-    window.location = "3.html"
+function page2() {
+    window.location = "2.html"
 }
 
 // Generate drop location and populate
-function mapCaldera(){
-    dropLocation.textContent = caldera[randomInt(53) + 1]
-    map.src="2/caldera.png"
+function mapUrzikstan(){
+    dropLocation.textContent = urzikstan[randomInt(urzikstan.length) + 1]
+    map.src="3/urzikstan.png"
 }
 // Generate drop location and populate
 function mapVondel(){
-    dropLocation.textContent = vondel[randomInt(53) + 1]
-    map.src="2/Vondel.png"
+    dropLocation.textContent = vondel[randomInt(vondel.length) + 1]
+    map.src="3/Vondel.png"
 }
 // Generate drop location and populate
 function mapAshika(){
-    dropLocation.textContent = ashika[randomInt(53) + 1]
-    map.src="2/Ashika.png"
+    dropLocation.textContent = ashika[randomInt(ashika.length) + 1]
+    map.src="3/Ashika.png"
 }

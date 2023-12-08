@@ -201,3 +201,7 @@ function generateNumber(){
 function page2(){
     window.location = "2.html"
 }
+
+function page3(){
+    window.location = "3.html"
+}

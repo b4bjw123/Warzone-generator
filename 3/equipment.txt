@@ -1,0 +1,2 @@
+Stun,Gas and Air, Smoke, Scatter, Flash, Decoy, Snapshot, Shock, Stim, Fart, EMD;
+Frag, Claymore, Butter Knife, Thermite, Semtex, Thermobaric,Pizza, Drill, Vodka, C4, Ninja, Mavic Pro
