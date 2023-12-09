@@ -32,6 +32,7 @@ let numText = document.getElementById("num");
 let devMode = false;
 let locked = false;
 let lockedButton = document.getElementById("locked");
+let coord = document.getElementById("coord");
 
 // Read all files into vars
 jQuery.get('3/primary.txt', function (data) {
@@ -143,7 +144,7 @@ function regeneratePrimary() {
     if (!checkNum()) {
         return
     }
-    generatePerkPack()
+    // generatePerkPack()
     primary.textContent = generatePrimary();
     unlock();
 }
@@ -153,7 +154,7 @@ function regenerateSecondary() {
     if (!checkNum()) {
         return
     }
-    generatePerkPack()
+    // generatePerkPack()
     secondary.textContent = generateSecondary();
     while (secondary.textContent == primary.textContent) {
         secondary.textContent = generateSecondary();
@@ -176,17 +177,23 @@ function page2() {
 
 // Generate drop location and populate
 function mapUrzikstan(){
-    dropLocation.textContent = urzikstan[randomInt(urzikstan.length) + 1]
+    tmp = urzikstan[randomInt(urzikstan.length) + 1]
+    showCoord(tmp[0].charCodeAt(0)-65,tmp[1])
+    dropLocation.textContent = tmp
     map.src="3/urzikstan.png"
 }
 // Generate drop location and populate
 function mapVondel(){
-    dropLocation.textContent = vondel[randomInt(vondel.length) + 1]
+    tmp = vondel[randomInt(vondel.length) + 1]
+    showCoord(tmp[0].charCodeAt(0)-65,tmp[1])
+    dropLocation.textContent = tmp
     map.src="3/Vondel.png"
 }
 // Generate drop location and populate
 function mapAshika(){
-    dropLocation.textContent = ashika[randomInt(ashika.length) + 1]
+    tmp = ashika[randomInt(ashika.length) + 1]
+    showCoord(tmp[0].charCodeAt(0)-65,tmp[1])
+    dropLocation.textContent = tmp
     map.src="3/Ashika.png"
 }
 
@@ -207,3 +214,9 @@ function unlock(){
     primaryButton.style.background = ""
     secondaryButton.style.background = ""
 }
+
+function showCoord(x,y) {
+    coord.style.opacity = 1
+    coord.style.marginLeft = "calc(var(--px)*38 + var(--px)*"+x*100+")"
+    coord.style.marginTop = "calc(var(--px)*38 + var(--px)*"+y*100+")"
+} 

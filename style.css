@@ -64,10 +64,11 @@ button {
 
 img {
   display: block;
-    width: 1000px;
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+  width: 100%;
+  /* width: 1000px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto; */
 }
 
 div {
@@ -188,4 +189,25 @@ input:checked + .slider:before {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
+}
+
+#imageContainer {
+  position: relative;
+  width: 1000px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#coord {
+  position: absolute;
+  opacity: 0;
+  --px: calc(100%/1080);
+  width: calc(var(--px)*100);
+  height: calc(var(--px)*100);
+  top: 0px;
+  left:0px;
+  border: 0.1vw solid #21f379;
+  margin-top: calc(var(--px)*38 + var(--px)*000);
+  margin-left: calc(var(--px)*38 + var(--px)*000);
 }
