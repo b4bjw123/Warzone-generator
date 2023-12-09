@@ -14,16 +14,12 @@
     <h1>Loadout Generator 3</h1>
     <button id="games" onclick="page1()">MW1</button>
     <button id="games" onclick="page2()">MW2</button>
-    <h4>Limited to 3 regenerates, but use the unlimited switch to override.</h4>
-        <h4 id="num">4</h4>
+    <h4 id="info">Limited to 3 regenerates, use the "Locked?" button if the gun or a perk is locked</h4>
+        <h4 id="num">Chances:</h4>
     <div>
-        Limited
-        <label class="switch">
-            <input type="checkbox" id="checkNums" onclick="numSwap()">
-            <span class="slider round"></span>
-        </label>
-        Unlimited
+        <button id="locked" onclick="lock()">Locked?</button>
     </div>
+    <br>
     
     <button id="generate" onclick="generateLoadout()">Generate Loadout</button>
     <table>
@@ -96,7 +92,7 @@
             <td>Launcher</td>
         </tr><tr>
             <td>(LOL)</td>
-            <td>hAvE FuN :)</td>
+            <td>Have Fun :)</td>
         </tr>
     </table>
     <h1>Rule Generator</h1>
