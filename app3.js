@@ -180,7 +180,7 @@ function mapUrzikstan(){
     tmp = urzikstan[randomInt(urzikstan.length) + 1]
     showCoord(tmp[0].charCodeAt(0)-65,tmp[1])
     dropLocation.textContent = tmp
-    map.src="3/urzikstan.png"
+    map.src="3/Urzikstan.png"
 }
 // Generate drop location and populate
 function mapVondel(){
