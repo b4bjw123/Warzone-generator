@@ -211,3 +211,7 @@ input:checked + .slider:before {
   margin-top: calc(var(--px)*38 + var(--px)*000);
   margin-left: calc(var(--px)*38 + var(--px)*000);
 }
+
+#flex {
+  display: flex;
+}
