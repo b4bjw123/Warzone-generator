@@ -9,6 +9,9 @@ let rules = [];
 let urzikstan = [];
 let vondel = [];
 let ashika = [];
+let generateButton = document.getElementById("generate");
+let primaryButton = document.getElementById("regeneratePrimary");
+let secondaryButton = document.getElementById("regenerateSecondary");
 let map = document.getElementById("map");
 let perk1 = document.getElementById("perk1Text");
 let perk2 = document.getElementById("perk2Text");
@@ -26,6 +29,10 @@ let checkBoxNums = document.getElementById("checkNums");
 let playerNumber = document.getElementById("numberText");
 let nums = 4;
 let numText = document.getElementById("num");
+let devMode = false;
+let locked = false;
+let lockedButton = document.getElementById("locked");
+let coord = document.getElementById("coord");
 
 // Read all files into vars
 jQuery.get('3/primary.txt', function (data) {
@@ -62,23 +69,21 @@ jQuery.get("3/ashika.txt", function (data) {
 });
 
 
-// returns a boolean if the limited/unlimited switch is toggled
-function numSwap() {
-    if (checkBoxNums.checked == false) {
-        return true
-    } else {
-        return false
-    }
-}
-
-// if numSwap() is true de-increment generate value 
+// if devMode is false de-increment generate value 
 function checkNum() {
-    if (numSwap()) {
-        if (nums == 0) {
+    if (!devMode) {
+        if (locked){
+            return true 
+        } else if (nums == 0) {
             return false
         } else {
             nums -= 1;
-            numText.textContent = nums;
+            numText.textContent = "Chances: "+nums;
+            if (nums == 0){
+                generateButton.style.color = "lightgrey"
+                primaryButton.style.color = "lightgrey"
+                secondaryButton.style.color = "lightgrey"
+            }
             return true
         }
     } else {
@@ -110,6 +115,11 @@ function generateLoadout() {
     if (!checkNum()) {
         return
     }
+    if (locked){
+        generatePerkPack();
+        unlock();
+        return
+    }
     generatePerkPack()
     generateEquipment()
     primary.textContent = generatePrimary();
@@ -134,8 +144,9 @@ function regeneratePrimary() {
     if (!checkNum()) {
         return
     }
-    generatePerkPack()
+    // generatePerkPack()
     primary.textContent = generatePrimary();
+    unlock();
 }
 
 // Regenerate perk pack, then generate primary or secondary
@@ -143,11 +154,12 @@ function regenerateSecondary() {
     if (!checkNum()) {
         return
     }
-    generatePerkPack()
+    // generatePerkPack()
     secondary.textContent = generateSecondary();
     while (secondary.textContent == primary.textContent) {
         secondary.textContent = generateSecondary();
     }
+    unlock();
 }
 
 // Generate rule and populate
@@ -165,16 +177,46 @@ function page2() {
 
 // Generate drop location and populate
 function mapUrzikstan(){
-    dropLocation.textContent = urzikstan[randomInt(urzikstan.length) + 1]
-    map.src="3/urzikstan.png"
+    tmp = urzikstan[randomInt(urzikstan.length) + 1]
+    showCoord(tmp[0].charCodeAt(0)-65,tmp[1])
+    dropLocation.textContent = tmp
+    map.src="3/Urzikstan.png"
 }
 // Generate drop location and populate
 function mapVondel(){
-    dropLocation.textContent = vondel[randomInt(vondel.length) + 1]
+    tmp = vondel[randomInt(vondel.length) + 1]
+    showCoord(tmp[0].charCodeAt(0)-65,tmp[1])
+    dropLocation.textContent = tmp
     map.src="3/Vondel.png"
 }
 // Generate drop location and populate
 function mapAshika(){
-    dropLocation.textContent = ashika[randomInt(ashika.length) + 1]
+    tmp = ashika[randomInt(ashika.length) + 1]
+    showCoord(tmp[0].charCodeAt(0)-65,tmp[1])
+    dropLocation.textContent = tmp
     map.src="3/Ashika.png"
 }
+
+function lock(){
+    locked = true;
+    lockedButton.style.background = "indianred"
+    generateButton.style.background = "indianred"
+    generateButton.textContent = "Regenerate Perks"
+    primaryButton.style.background = "indianred"
+    secondaryButton.style.background = "indianred"
+}
+
+function unlock(){
+    locked = false;
+    lockedButton.style.background = ""
+    generateButton.style.background = ""
+    generateButton.textContent = "Generate Loadout"
+    primaryButton.style.background = ""
+    secondaryButton.style.background = ""
+}
+
+function showCoord(x,y) {
+    coord.style.opacity = 1
+    coord.style.marginLeft = "calc(var(--px)*38 + var(--px)*"+x*100+")"
+    coord.style.marginTop = "calc(var(--px)*38 + var(--px)*"+y*100+")"
+} 
