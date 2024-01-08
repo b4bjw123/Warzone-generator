@@ -83,6 +83,9 @@ function checkNum() {
                 generateButton.style.color = "lightgrey"
                 primaryButton.style.color = "lightgrey"
                 secondaryButton.style.color = "lightgrey"
+                document.querySelectorAll("#regenerateThrow").forEach(function(el) {
+                    el.style.color="lightgrey"
+                })
             }
             return true
         }
@@ -106,8 +109,20 @@ function generatePerkPack() {
 
 // Generate throwies and populate on page
 function generateEquipment() {
-    tactical.textContent = tacticals[randomInt(tacticals.length)]
+    generateTactical()
+    generateLethal()
+}
+
+// Generate Tactical
+function generateTactical() {
+    tactical.textContent =  tacticals[randomInt(tacticals.length)]
+    unlock()
+}
+
+// Generate throwies and populate on page
+function generateLethal() {
     lethal.textContent = lethals[randomInt(lethals.length)]
+    unlock()
 }
 
 // Generates loadout and populates
@@ -204,6 +219,9 @@ function lock(){
     generateButton.textContent = "Regenerate Perks"
     primaryButton.style.background = "indianred"
     secondaryButton.style.background = "indianred"
+    document.querySelectorAll("#regenerateThrow").forEach(function(el) {
+        el.style.display="inline"
+    })
 }
 
 function unlock(){
@@ -213,6 +231,9 @@ function unlock(){
     generateButton.textContent = "Generate Loadout"
     primaryButton.style.background = ""
     secondaryButton.style.background = ""
+    document.querySelectorAll("#regenerateThrow").forEach(function(el) {
+        el.style.display="none"
+    })
 }
 
 function showCoord(x,y) {

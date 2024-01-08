@@ -215,3 +215,8 @@ input:checked + .slider:before {
 #flex {
   display: flex;
 }
+
+#regenerateThrow {
+  display: none;
+  background: indianred;
+}
