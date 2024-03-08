@@ -1,6 +1,6 @@
 SVA 545 (III AR), RAM-7 (III AR), MTZ-556 (III AR), HOLGER 556 (III AR), DG-56 (III AR), M4 (AR), TAQ-56 (AR), Kastov 762 (AR), Lachmann-556 (AR), STB 556 (AR), M16 (AR), Kastov-74U (AR), Kastov 545 (AR),Chimera (AR),M13B (AR),ISO Hemlock (AR),Tempus Razorback (AR), M13C (AR),FR Avancer (AR),TR-76 Geist (AR),
 
-BAS-B (III BR), Lachmann-762 (BR), SO-14 (BR), TAQ-V (BR), FTAC RECON (BR), Cronen Squall (BR),
+SOA Subverter (III BR), BAS-B (III BR), Lachmann-762 (BR), SO-14 (BR), TAQ-V (BR), FTAC RECON (BR), Cronen Squall (BR),
 
 STRIKER (III SMG), WSP SWARM (III SMG), AMR9 (III SMG), WSP-9 (III SMG), RIVAL-9 (III SMG), STRIKER 9 (III SMG), VEL 46 (SMG), MX9 (SMG), Lachmann Sub (SMG), Vaznev-9K (SMG), FSS Hurricane (SMG), Minibak (SMG), PDSW 528 (SMG), Fennec 45 (SMG), BAS-P (SMG), ISO 45 (SMG), Lachmann Shroud (SMG),ISO 9mm (SMG),
 
