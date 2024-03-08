@@ -12,4 +12,4 @@ KVD Enforcer (III MR), MCW 6.8 (III MR), DM56 (III MR), MTZ Interceptor (III MR)
 
 XRK Stalker  (III SR), KATT-AMR  (III SR), Longbow  (III SR), KV Inhibitor  (III SR), MCPR-300 (SR), Signal 50 (SR), LA-B 330 (SR), SP-X 80 (SR), Victus XMR (SR), Carrack .300 (SR), FJX Imperium (SR),
 
-Riot Shield (LOL)
+Riot Shield (LOL), Souldrender (LOL)
