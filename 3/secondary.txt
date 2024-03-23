@@ -1,18 +1,18 @@
-SVA 545 (III AR), RAM-7 (III AR), MTZ-556 (III AR), HOLGER 556 (III AR), DG-56 (III AR), M4 (AR), TAQ-56 (AR), Kastov 762 (AR), Lachmann-556 (AR), STB 556 (AR), M16 (AR), Kastov-74U (AR), Kastov 545 (AR),Chimera (AR),M13B (AR),ISO Hemlock (AR),Tempus Razorback (AR), M13C (AR),FR Avancer (AR),TR-76 Geist (AR),
+MCW (III AR), BP50 (III AR), SVA 545 (III AR), RAM-7 (III AR), MTZ-556 (III AR), HOLGER 556 (III AR), DG-56 (III AR), FR 5.56 (III AR), M4 (AR), TAQ-56 (AR), Kastov 762 (AR), Lachmann-556 (AR), STB 556 (AR), M16 (AR), Kastov-74U (AR), Kastov 545 (AR),Chimera (AR),M13B (AR),ISO Hemlock (AR),Tempus Razorback (AR), M13C (AR),FR Avancer (AR),TR-76 Geist (AR),
 
-BAS-B (III BR), Lachmann-762 (BR), SO-14 (BR), TAQ-V (BR), FTAC RECON (BR), Cronen Squall (BR),
+SOA Subverter (III BR), BAS-B (III BR), Sidewinder (III BR), MTZ-762 (III BR), Lachmann-762 (BR), SO-14 (BR), TAQ-V (BR), FTAC RECON (BR), Cronen Squall (BR),
 
-STRIKER (III SMG), WSP SWARM (III SMG), AMR9 (III SMG), WSP-9 (III SMG), RIVAL-9 (III SMG), STRIKER 9 (III SMG), VEL 46 (SMG), MX9 (SMG), Lachmann Sub (SMG), Vaznev-9K (SMG), FSS Hurricane (SMG), Minibak (SMG), PDSW 528 (SMG), Fennec 45 (SMG), BAS-P (SMG), ISO 45 (SMG), Lachmann Shroud (SMG),ISO 9mm (SMG),
+RAM-9 (III SMG), HRM-9 (III SMG), STRIKER (III SMG), WSP SWARM (III SMG), AMR9 (III SMG), WSP-9 (III SMG), RIVAL-9 (III SMG), STRIKER 9 (III SMG), VEL 46 (SMG), MX9 (SMG), Lachmann Sub (SMG), Vaznev-9K (SMG), FSS Hurricane (SMG), Minibak (SMG), PDSW 528 (SMG), Fennec 45 (SMG), BAS-P (SMG), ISO 45 (SMG), Lachmann Shroud (SMG),ISO 9mm (SMG),
 
 Lockwood 680 (III SG), Haymaker (III SG), Riverter (III SG), Lockwood 300 (SG), Expedite 12 (SG), Bryson 800 (SG), Bryson 890 (SG), KV Broadside (SG), MX Guardian (SG),
 
-Pulemyot 762 (III LMG), DG-58 LSW  (III LMG), TAQ Eradicator (III LMG), Buren MK9 (III LMG), Holger 26 (III LMG), Sakin MG38 (LMG), HCR 56 (LMG), 556 Icarus (LMG), RAAL MG (LMG), RPK (LMG), Rapp H (LMG),
+TAQ Evolvere (IIi LMG), Pulemyot 762 (III LMG), DG-58 LSW  (III LMG), TAQ Eradicator (III LMG), Bruen MK9 (III LMG), Holger 26 (III LMG), Sakin MG38 (LMG), HCR 56 (LMG), 556 Icarus (LMG), RAAL MG (LMG), RPK (LMG), Rapp H (LMG),
 
 KVD Enforcer (III MR), MCW 6.8 (III MR), DM56 (III MR), MTZ Interceptor (III MR), EBR-14 (MR), SP-R 208 (MR), Lockwood MK2 (MR), LM-S (MR), SA-B 50 (MR), TAQ-M (MR), Tempus Torrent (MR),
 
 XRK Stalker  (III SR), KATT-AMR  (III SR), Longbow  (III SR), KV Inhibitor  (III SR), MCPR-300 (SR), Signal 50 (SR), LA-B 330 (SR), SP-X 80 (SR), Victus XMR (SR), Carrack .300 (SR), FJX Imperium (SR),
 
-Riot Shield (LOL),
+Riot Shield (LOL)
 
 COR-45 (III P), RENETTI (III P), TYR (III P), WSP STINGER (III P), P890 (P), .50 GS (P), X12 (P), Basilisk (P), X13 Auto (P), GS Magna (P), FTAC Seige (P), 9MM Daemon (P),
 

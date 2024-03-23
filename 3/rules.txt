@@ -1,11 +1,9 @@
 Choke on it: No using Gas Masks
 The Amish: No using field upgrades
-Judge, Jury and Executioner: No buying back teammates
 Prison Snake: If sent to the gulag you must lay down and crawl for the duration of your fight.
 EMP: No killstreaks (ex: no UAV, cluster strikes, etc)
 Lucky Duck: No special rules.
-Choose Wisely: You can only loot one house/building (can loot bodies).
-Respect the Dead: No looting bodies. (Only ammo)
+Respect the Dead: No looting bodies. (Only ammo,plates,cash)
 Stay Low: You can only move around when crouched, prone or in a vehicle.
 Gephyrophobia: You are deathly afraid of bridges, you must swim or go around when you encounter a bridge.
 Viking Funeral: If you have a Molotov you must throw it on an enemies body after downing them in order to send them to Valhalla.
@@ -19,33 +17,26 @@ Switch It Up: Every time you kill someone, you have to switch your weapon that y
 Suppressed Only: Only suppressed weapons allowed.
 Beware the man with one gun, he knows how to use it: Only use one gun.
 Hot Potato: Every grenade you see (frag, flash ,smoke, & molotov) you must pick up and immediately throw it .
-Entamaphobia: Cannot open doors, must either loot open structures or doors already open.
 Hey That's Mine: you and your squad have to find a vehicle and guard it with your lives. If an enemy takes it you have to commit suicide.
 Death from Above: Helicopter warfare only. Someone has to be in a helicopter at all times.
 Why did the chicken do it: Any time you cross a road you must crouch across.
 Fisherman: Anytime you cross a river, you must lay down and say hello to the fishies.
 Follow the Leader: Player with the least kills/damage in Pre-game Lobby is the Leader, they make all the calls the team must follow all instructions.
 Uber: Player with the least kills/damage in Pre-game Lobby is the Uber driver and the rest of the team can only change location using the Uber.
-One chest challenge: The first chest is the only one you're allowed to use the entire game. No floorloot or corpse loot.
+One chest challenge: The first chest is the only one you're allowed to use the entire game. No floorloot or corpse loot. (Only for guns)
 Stalker: You must follow the edge of the Gas the entire game.
 To the Moon: You cannot use any attachments that help recoil control.
-Red light, green light: One player says green light or red light all players must obey.
 Dead Eye: no scopes allowed on loadout guns.
 Aquaphobia: Fear of water. Any river or lake you must avoid.
 LEYROY JENKINS: Don't stop running. Simple
 Ultimate Distraction: All players run Decoy grenades and throw all of them when in a fight.
-Mr Chatty: Talk to any other player you come across. Try to make the biggest team possible.
-Elevator Music: Non-stop Elevator music. Simple
 Number 1 teammate: No useful callouts. ("They're over there", "That way" etc)
-I'M BLUE DA BA DE: No 3 plate armour vests.
-Screw the AI revolution: Kill all AI!
 Free Ride: Use the train for as long as possible.
 Save the planet: Only use EVs and recharge them whenever you can.
 King of the hill: Get a Most Wanted Contract, and sit at the top of the tallest place (building/terrain)
-Peaky Bliders: Flash grenades. As many as possible. Make them regret having eyes.
-Aquaman: Spend as much time in water as possible.
+Peaky Bliders: Blinder/Concussion grenades. As many as possible. Make them regret having eyes.
 Danger Zone: All lethal killsteaks (Mortor Strike, Air strike), must be placed at players feet. Can you out run it?
 Michael Jackson: You can only go through doors backwards. Only drive/Fly backwards.
 I can see you: Equip Spotter Scopes in loadout.You can only then ping through the spotter scope or gun scopes.
-I'm surrounded: Maximum decoy grenades. Use all you have in every fight.
 I CAN SMELL YOU: Tear gas everyone. Sniff them out and kill them.
+Cheapskape: No loadout. Simple
