@@ -1,0 +1,3 @@
+Veteran,Grenadier,Dexterity,Scavenger,Survivor;
+Quartermaster, Bomb Squad, Tracker, Sprinter, Cold-Blooded, Quick Fix;
+Gung-Ho, Resolute, Ghost, Birdseye, Tempered, Alertness

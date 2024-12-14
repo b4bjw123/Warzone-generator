@@ -1,0 +1,17 @@
+XM4(AR):1,AK-74(AR):10,AMES 85(AR):19,GPR 91(AR):28,Model L(AR):40,Goblin MK2(AR):46,AS Val(AR):55,
+
+C9(SMG):1,KSV(SMG):7,Tanto .22(SMG):16,PP-919(SMG):37,Jackal PDW(SMG):43,Kompakt 92(SMG):92,
+
+Marine SP(SG):1,ASG-89(SG):31,
+
+PU-21(LMG):1,XMG(LMG):13,GPMG-7(LMG):52,
+
+Swat 5.56(MR):1,Tsarkov 7.62(MR):22,AEK-973(MR):34,DM-10(MR):43,
+
+LW3A1 Frostline(SR):1,SVD(SR):25,LR 7.62(SR):49,
+
+Cigma 2B(L):1,HE-1(L):19,
+
+9mm PM(P):1,Grekhova(P):13,GS45(P):28,Stryder .22(P):40,
+
+Combat Knife(LOL):1,Baseball Bat(LOL):52

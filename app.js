@@ -205,4 +205,7 @@ function page2(){
 function page3(){
     window.location = "3.html"
 }
-page3()
+function page4(){
+    window.location = "4.html"
+}
+page4()

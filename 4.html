@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="icon.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warzone 4 Generator</title>
+    <script src="app4.js" defer></script> 
+</head>
+<body>
+    <h1>Loadout Generator 4</h1>
+    <h4 id="info">Limited to 3 regenerates, use the "Locked?" button if the gun or a perk is locked</h4>
+        <h4 id="num">Chances: 3</h4>
+    <div>
+        <button id="locked" onclick="lock()" style="display: none;">Locked?</button>
+    </div>
+    <br>
+    <div>
+        Rank Level:
+        <input type="number" id="level" value="1">
+    </div>
+    <br>
+    <button id="generate" onclick="generateLoadout()">Generate Loadout</button>
+    <table>
+        <tr>
+            <th class="title">Perk 1</th>
+            <th class="title">Perk 2</th>
+            <th class="title">Perk 3</th>
+        </tr>
+        <tr>
+            <td id="perk1Text">Perk1</td>
+            <td id="perk2Text">Perk2</td>
+            <td id="perk3Text">Perk3</td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <th class="title">Primary</th>
+            <th class="title">Secondary</th>
+        </tr>
+        <tr>
+            <td id="primaryText">Primary</td>
+            <td id="secondaryText">Secondary</td>
+        </tr>
+        <tr>
+            <th><button id="regeneratePrimary" onclick="regeneratePrimary()">Regenerate</button></th>
+            <th><button id="regenerateSecondary" onclick="regenerateSecondary()">Regenerate</button></th>
+        </tr>
+        <tr>
+            <th class="title">Tactical</th>
+            <th class="title">Lethal</th>
+        </tr>
+        <tr>
+            <td id="tacticalText">Tactical</td>
+            <td id="lethalText">Lethal</td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <th class="title">Wildcard</th>
+        </tr>
+        <tr>
+            <td id="wildcard1Text">Wildcard1</td>
+        </tr>
+    </table>
+    <h2>Gun Types Key</h2>
+    <table id="type">
+        <tr>
+            <th>(Code)</th>
+            <th>Gun Class</th>
+        </tr><tr>
+            <td>(AR)</td>
+            <td>Assault Rifle</td>
+        </tr><tr>
+            <td>(BR)</td>
+            <td>Battle Rifle</td>
+        </tr><tr>
+            <td>(SMG)</td>
+            <td>Sub-Machine Gun</td>
+        </tr><tr>
+            <td>(SG)</td>
+            <td>Shotgun</td>
+        </tr><tr>
+            <td>(LMG)</td>
+            <td>Light Machine Gun</td>
+        </tr><tr>
+            <td>(MR)</td>
+            <td>Marksman Rifle</td>
+        </tr><tr>
+            <td>(SR)</td>
+            <td>Snipe Rifle</td>
+        </tr><tr>
+            <td>(P)</td>
+            <td>Pistol</td>
+        </tr><tr>
+            <td>(L)</td>
+            <td>Launcher</td>
+        </tr><tr>
+            <td>(LOL)</td>
+            <td>Have Fun :)</td>
+        </tr>
+    </table>
+    <h1>Rule Generator</h1>
+    <Button id="generate" onclick="generateRule()">Generate Rule</Button>
+    <table>
+        <tr>
+            <th class="title">Rule</th>
+        </tr>
+        <tr>
+            <td id="ruleText">Rule</td>
+        </tr>
+    </table>
+    <a id="Al Mazrah">    
+        <h1>Drop Generator</h1>
+        <table>
+            <tr>
+                <th class="title">Map</th>
+            </tr>
+        </table>
+        <table>
+            <tr>    
+                <th id="flex"><button id="mapUrzikstan" onclick="mapUrzikstan()">Urzikstan</button></th>
+                <th id="flex"><button id="mapVondel" onclick="mapVondel()">Vondel</button></th>
+                <th id="flex"><button id="mapAshika" onclick="mapAshika()">Ashika</button></th>
+                <th id="flex"><button id="mapRebirth" onclick="mapRebirth()">Rebirth</button></th>
+                <th id="flex"><button id="mapArea99" onclick="mapArea99()">Area 99</button></th>
+            </tr>
+        </table>
+        <table>
+            
+            <tr>
+                <th id="locationText">Drop Location</th>
+            </tr>
+        </table>
+        <div id="imageContainer">
+            <div id="coord"></div>
+            <img id="map" src="4/Urzikstan.png">
+        </div>
+    </a>
+</body>
+</html>
