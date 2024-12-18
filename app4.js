@@ -178,7 +178,7 @@ function generateLoadout() {
             secondary.textContent = generatePrimary();
         }
     } else {
-        secondary.textContent = generatePrimary();
+        secondary.textContent = generateSecondary();
     }
 }
 
