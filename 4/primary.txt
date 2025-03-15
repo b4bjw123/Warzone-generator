@@ -9,3 +9,9 @@ PU-21(LMG):1,XMG(LMG):13,GPMG-7(LMG):52,
 Swat 5.56(MR):1,Tsarkov 7.62(MR):22,AEK-973(MR):34,DM-10(MR):43,
 
 LW3A1 Frostline(SR):1,SVD(SR):25,LR 7.62(SR):49,AMR MOD 4(SR):55,
+
+Cigma 2B(L):1,HE-1(L):19,
+
+9mm PM(P):1,Grekhova(P):13,GS45(P):28,Stryder .22(P):40,
+
+Sirin(Spec):1
