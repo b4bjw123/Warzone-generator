@@ -153,8 +153,11 @@ function generateLethal() {
 
 // Generate wildcard and populate on page
 function generateWildcard() {
-    wildcard.textContent = wildcards[randomInt(wildcards.length)]
-    // wildcard.textContent = "Overkill"
+    if (randomInt(50)>50){
+        wildcard.textContent = "Overkill"
+    } else {
+        wildcard.textContent = wildcards[randomInt(wildcards.length)]
+    }
     unlock()
 }
 
@@ -186,7 +189,7 @@ function generateLoadout() {
 function generatePrimary() {
     while (true) {
         temp = primaryGuns[randomInt(primaryGuns.length)];
-        if (temp[1]<=level.value){
+        if (temp[1]<=level.value && temp!=secondary.textContent){
             break
         }
     }
@@ -197,7 +200,7 @@ function generatePrimary() {
 function generateSecondary() {
     while (true) {
         temp = secondaryGuns[randomInt(secondaryGuns.length)];
-        if (temp[1]<=level.value){
+        if (temp[1]<=level.value && temp!=primary.textContent){
             break
         }
     }
@@ -219,9 +222,16 @@ function regenerateSecondary() {
     if (!checkNum()) {
         return
     }
-    secondary.textContent = generateSecondary();
-    while (secondary.textContent == primary.textContent) {
+    if (wildcard.textContent.includes("Overkill")) {
+        secondary.textContent = generatePrimary();
+        while (secondary.textContent == primary.textContent) {
+            secondary.textContent = generatePrimary();
+        }
+    } else {
         secondary.textContent = generateSecondary();
+        while (secondary.textContent == primary.textContent) {
+            secondary.textContent = generateSecondary();
+        }
     }
     unlock();
 }
