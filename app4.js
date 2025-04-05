@@ -76,6 +76,10 @@ jQuery.get("4/rules.txt", function (data) {
     rules = data.split("\n");
 });
 
+jQuery.get("4/verdansk.txt", function (data) {
+    verdansk = data.replace(/[\n\r\t]/gm, "").split(";");
+});
+
 jQuery.get("4/Urzikstan.txt", function (data) {
     urzikstan = data.replace(/[\n\r\t]/gm, "").split(";");
 });
@@ -249,6 +253,13 @@ function page2() {
     window.location = "2.html"
 }
 
+// Generate drop location and populate
+function mapVerdansk() {
+    tmp = verdansk[randomInt(verdansk.length) + 1]
+    showCoord(tmp[0].charCodeAt(0) - 65, tmp[1])
+    dropLocation.textContent = tmp
+    map.src = "4/verdansk.png"
+}
 // Generate drop location and populate
 function mapUrzikstan() {
     tmp = urzikstan[randomInt(urzikstan.length) + 1]
