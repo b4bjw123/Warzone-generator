@@ -226,6 +226,7 @@ function regenerateSecondary() {
     if (!checkNum()) {
         return
     }
+    generateWildcard();
     if (wildcard.textContent.includes("Overkill")) {
         secondary.textContent = generatePrimary();
         while (secondary.textContent == primary.textContent) {
