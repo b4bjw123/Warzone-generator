@@ -287,7 +287,7 @@ function mapRebirth() {
     tmp = rebirth[randomInt(rebirth.length) + 1]
     showCoord(tmp[0].charCodeAt(0) - 65, tmp[1])
     dropLocation.textContent = tmp
-    map.src = "4/rebirth.png"
+    map.src = "4/Rebirth.png"
 }
 // Generate drop location and populate
 function mapArea99() {
