@@ -84,11 +84,11 @@ jQuery.get("4/Urzikstan.txt", function (data) {
     urzikstan = data.replace(/[\n\r\t]/gm, "").split(";");
 });
 
-jQuery.get("4/Vondel.txt", function (data) {
+jQuery.get("4/vondel.txt", function (data) {
     vondel = data.replace(/[\n\r\t]/gm, "").split(";");
 });
 
-jQuery.get("4/Ashika.txt", function (data) {
+jQuery.get("4/ashika.txt", function (data) {
     ashika = data.replace(/[\n\r\t]/gm, "").split(";");
 });
 
