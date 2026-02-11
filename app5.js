@@ -1,6 +1,4 @@
-let primaryGuns = [
-    []
-];
+let primaryGuns = [];
 let perks1 = [];
 let perks2 = [];
 let perks3 = [];
@@ -8,11 +6,8 @@ let wildcards = [];
 let tacticals = [];
 let lethals = [];
 let rules = [];
-let urzikstan = [];
-let vondel = [];
-let ashika = [];
 let rebirth = [];
-let area99 = [];
+let havens = [];
 let generateButton = document.getElementById("generate");
 let primaryButton = document.getElementById("regeneratePrimary");
 let secondaryButton = document.getElementById("regenerateSecondary");
@@ -87,6 +82,10 @@ jQuery.get("5/verdansk.txt", function (data) {
 
 jQuery.get("5/Rebirth.txt", function (data) {
     rebirth = data.replace(/[\n\r\t]/gm, "").split(";");
+});
+
+jQuery.get("5/Havens.txt", function (data) {
+    havens = data.replace(/[\n\r\t]/gm, "").split(";");
 });
 
 // if devMode is false de-increment generate value 
@@ -243,14 +242,21 @@ function mapVerdansk() {
     tmp = verdansk[randomInt(verdansk.length) + 1]
     showCoord(tmp[0].charCodeAt(0) - 65, tmp[1])
     dropLocation.textContent = tmp
-    map.src = "4/verdansk.png"
+    map.src = "5/verdansk.png"
 }
 // Generate drop location and populate
 function mapRebirth() {
     tmp = rebirth[randomInt(rebirth.length) + 1]
     showCoord(tmp[0].charCodeAt(0) - 65, tmp[1])
     dropLocation.textContent = tmp
-    map.src = "4/Rebirth.png"
+    map.src = "5/Rebirth.png"
+}
+// Generate drop location and populate
+function mapHavens() {
+    tmp = havens[randomInt(havens.length) + 1]
+    showCoord(tmp[0].charCodeAt(0) - 65, tmp[1])
+    dropLocation.textContent = tmp
+    map.src = "5/Havens.png"
 }
 
 function lock() {
