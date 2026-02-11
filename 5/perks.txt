@@ -1,0 +1,3 @@
+Drill instructor:1,Scavenger:6,Surveyor:17,Mountaineer:27,Field Medic:39;
+Sprinter:1, Reactive Armor:8, Quick Fix:20,Bomb Squad:30, Alertness:47;
+Survivor:1, Adaptive:11, Tempered:23, Ghost:, Tracker:51

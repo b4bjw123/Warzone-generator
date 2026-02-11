@@ -1,0 +1,15 @@
+M15 MOD 0(AR):4,AK-27(AR):4,MXR-17(AR):16,X9 Maverick(AR):28,DS20 Mirage(AR):37,Peacekeeper MK1(AR):52,
+
+Ryden 45K(SMG):4,RK-9(SMG):7,Razor 9mm(SMG):19,Dravec 45(SMG):34,Carbon 57(SMG):46,MPC-25(SMG):55,
+
+M10 Breacher(SG):4,ECHO 12(SG):22,Akita(SG):40,
+
+MK.78(LMG):4,XM325(LMG):31,
+
+M8A1(MR):10,Warden 308(MR):25,M34 Novaline(MR):49
+
+VS Recon(SR):4,Shadow WK(SR):13,XR-3 ION(SR):43,
+
+AAROW 109(L):4,ARC M1(L):25,
+
+Jager 45(P):4,Velox 5.7(P):13,Coda 9(P):34
