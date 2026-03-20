@@ -32,7 +32,6 @@ LEYROY JENKINS: Don't stop running. Simple
 Ultimate Distraction: All players run Decoy grenades and throw all of them when in a fight.
 Number 1 teammate: No useful callouts. ("They're over there", "That way" etc)
 Free Ride: Use the train for as long as possible.
-Save the planet: Only use EVs and recharge them whenever you can.
 King of the hill: Get a Most Wanted Contract, and sit at the top of the tallest place (building/terrain)
 Peaky Bliders: Blinder/Concussion grenades. As many as possible. Make them regret having eyes.
 Danger Zone: All lethal killsteaks (Mortor Strike, Air strike), must be placed at players feet. Can you out run it?
@@ -40,3 +39,7 @@ Michael Jackson: You can only go through doors backwards. Only drive/Fly backwar
 I can see you: Equip Spotter Scopes in loadout.You can only then ping through the spotter scope or gun scopes.
 I CAN SMELL YOU: Tear gas everyone. Sniff them out and kill them.
 Cheapskape: No loadout. Simple
+Drop and give me 20: Using Timer (at bottom of page) do 10 pushs ups
+Simon says: Using Timer (at bottom of page) empty your mag into the Air
+Incoming!: Using Timer (at bottom of page) find cover
+

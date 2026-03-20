@@ -31,6 +31,10 @@ let devMode = false;
 let locked = false;
 let lockedButton = document.getElementById("locked");
 let coord = document.getElementById("coord");
+let timerButton = document.getElementById("timerButton");
+let timerRunning = false;
+var alarmAudio = new Audio('5/do-it.mp3');
+
 
 // Read all files into vars
 jQuery.get('5/primary.txt', function (data) {
@@ -287,4 +291,24 @@ function showCoord(x, y) {
     coord.style.opacity = 1
     coord.style.marginLeft = "calc(var(--px)*38 + var(--px)*" + x * 100 + ")"
     coord.style.marginTop = "calc(var(--px)*38 + var(--px)*" + y * 100 + ")"
+}
+
+function startTimer() {
+    if (timerRunning){
+        clearTimeout(timer);
+        timerRunning = false;
+        timerButton.innerHTML = "Start Timer"
+    } else {
+        timerRunning = true;
+        timerButton.innerHTML = "Stop Timer"
+        createTimer();
+    }
+}
+
+function createTimer(){
+    timer = setTimeout(function() {
+        alarmAudio.play();
+        alert("test");
+        createTimer();
+        },randomInt(80)*6000);
 }
